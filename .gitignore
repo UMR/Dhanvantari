@@ -44,3 +44,6 @@ Thumbs.db
 Dhanvantari.Client/obj/
 obj/
 *.suo
+bin/
+node_modules/
+.angular/
