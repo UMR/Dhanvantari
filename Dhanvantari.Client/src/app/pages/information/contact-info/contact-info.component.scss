@@ -1,0 +1,32 @@
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    padding: .7rem;
+    border: 1px solid #dee2e6;
+    color: #fff;
+    background: #3c4b64;
+    font-weight: 700;
+    border-radius: 0px;
+    transition: box-shadow 0.2s;
+    opacity:.9;
+}
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link:hover {
+    color: #fff !important;
+    background: #3c4b64 !important;
+    opacity:1;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link:focus {
+    box-shadow: none;
+    color: #fff !important;
+    background: #3c4b64 !important;
+    opacity: 1;
+}
+:host ::ng-deep .p-accordion .p-accordion-header a {
+    background: #3c4b64 !important;
+    opacity: 1;
+    color: #fff !important;
+}
+
+:host ::ng-deep .p-accordion p-accordiontab .p-accordion-tab {
+    margin-bottom: 8px;
+}

@@ -1,0 +1,99 @@
+<div class="grid">
+    <div class="col-12">
+        <button pButton pRipple label="Add New" class="p-button-success" (click)="openNewAgency()"></button>
+    </div>
+</div>
+<p-table [value]="agencys"
+         [rows]="10"
+         [paginator]="true"
+         [tableStyle]="{ 'min-width': '75rem' }"
+         [rowHover]="true"
+         dataKey="agencyId"
+         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+         [showCurrentPageReport]="true"
+         [rowsPerPageOptions]="[10, 25, 50]">
+    <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">            
+            <h5 style="width:300px">Agency Information</h5>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="min-width:15rem">Agency Name</th>
+            <th>Agency URL Prefix</th>
+            <th>Agency Email</th>
+            <th>Agency Phone</th>
+            <th>Agency Contact Person</th>
+            <th>Agency Contact Person Phone</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-agency>
+        <tr>
+            <td>{{ agency.agencyName }}</td>
+            <td>{{ agency.urlPrefix }}</td>
+            <td>{{ agency.agencyEmail }}</td>
+            <td>{{ agency.agencyPhone }}</td>
+            <td>{{ agency.agencyContactPerson }}</td>
+            <td>{{ agency.agencyContactPersonPhone }}</td>
+            <td>
+                <input type="checkbox" name="group" [checked]="agency.isActive" (change)="changeStatus(agency.agencyId,agency.isActive)">
+            </td>
+            <td>
+                <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editAgency(agency)"></button>
+                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteAgency(agency)"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+<p-dialog [(visible)]="agencyDialog" [style]="{ width: '450px' }" header="{{addEditTxt}} Agency" [modal]="true" [draggable]="false" [resizable]="false">
+    <ng-template pTemplate="content">
+        <div class="field">
+            <label for="agencyName">Agency Name</label>
+            <input type="text" pInputText id="agencyName" [(ngModel)]="agency.agencyName" required autofocus maxlength="100"/>
+            <small class="p-error" *ngIf="submitted && !agency.agencyName">Agency Name is required.</small>
+        </div>
+        <div class="field">
+            <label for="urlPrefix">Agency URL Prefix</label>
+            <input pInputText [(ngModel)]="agency.urlPrefix" [pKeyFilter]="'alpha'" id="urlPrefix" maxlength="50" />
+        </div>
+        <div class="field">
+            <label for="agencyEmail">Agency Email</label>
+            <input type="text" pInputText id="agencyEmail" [(ngModel)]="agency.agencyEmail" maxlength="100"/>
+        </div>
+        <div class="field">
+            <label for="agencyPhone">Agency Phone</label>
+            <p-inputMask mask="(999) 999-9999" id="agencyPhone" [(ngModel)]="agency.agencyPhone" placeholder="(999) 999-9999"/>
+        </div>
+        <div class="field">
+            <label for="agencyAdress">Agency Address</label>
+            <textarea pInputTextarea id="agencyAdress" [(ngModel)]="agency.agencyAddress" maxlength="200" [autoResize]="true"></textarea>
+        </div>
+        <div class="field">
+            <label for="contactPerson">Agency Contact Person</label>
+            <input type="text" pInputText  id="contactPerson" [(ngModel)]="agency.agencyContactPerson"/>
+        </div>
+        <div class="field">
+            <label for="personPhone">Agency Contact Person Phone</label>
+            <p-inputMask mask="(999) 999-9999" id="personPhone" [(ngModel)]="agency.agencyContactPersonPhone" placeholder="(999) 999-9999"/>
+        </div>
+        <div>
+            <label for="name" style="margin-right:12px">Active</label>
+            <input type="checkbox" id="name" [(ngModel)]="agency.isActive"/>
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+        <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text p-button-success p-modal-save-btn" (click)="saveAgency()"></button>
+    </ng-template>
+</p-dialog>
+
+<p-toast></p-toast>
+<p-confirmDialog [style]="{ width: '450px' }" #cd>
+    <ng-template pTemplate="footer">
+        <button type="button" pButton icon="pi pi-times" label="No" class="btn-no" (click)="cd.reject()"></button>
+        <button type="button" pButton icon="pi pi-check" label="Yes" class="btn-yes" (click)="cd.accept()"></button>
+    </ng-template>
+</p-confirmDialog>

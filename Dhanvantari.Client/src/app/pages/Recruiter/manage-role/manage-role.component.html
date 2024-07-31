@@ -1,0 +1,47 @@
+<div class="grid">
+    <div class="col-12">
+        <button pButton pRipple label="Add New Role" class="p-button-success" (click)="openNewRole()"></button>
+    </div>
+</div>
+<p-table [value]="roles"
+         [rows]="15"
+         [paginator]="true"
+         [tableStyle]="{ 'min-width': '75rem' }"
+         [rowHover]="true"
+         dataKey="roleId"
+         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+         [showCurrentPageReport]="true"
+         selectionMode="single"
+         [rowsPerPageOptions]="[15, 30, 50]">
+    <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+            <h5 style="width:300px">Manage Role</h5>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Role Name</th>
+            <th>Action</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-role>
+        <tr>
+            <td>{{ role.roleName }}</td>
+            <td>
+                <button pButton pRipple icon="pi pi-eye" class="p-button-rounded p-button-warning mr-2" (click)="editRole(role)"></button>
+                <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editRole(role)"></button>
+                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-danger" (click)="deleteRole(role)"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-toast></p-toast>
+<p-confirmDialog [style]="{ width: '450px' }" #cd>
+    <ng-template pTemplate="footer">
+        <button type="button" pButton icon="pi pi-times" label="No" class="btn-no" (click)="cd.reject()"></button>
+        <button type="button" pButton icon="pi pi-check" label="Yes" class="btn-yes" (click)="cd.accept()"></button>
+    </ng-template>
+</p-confirmDialog>
+
+<loading [is-loading]="isLoading"></loading>

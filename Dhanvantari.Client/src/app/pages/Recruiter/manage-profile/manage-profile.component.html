@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <p-card header="Manage Profile">
+            <div class="field">
+                <label for="loginId">Login Id</label>
+                <input type="text" pInputText id="loginId" [(ngModel)]="loginId" maxlength="100" readonly />
+            </div>
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input type="text" pInputText id="firstName" [(ngModel)]="firstName" maxlength="100" />
+            </div>
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input type="text" pInputText id="lastName" [(ngModel)]="lastName" maxlength="100" />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" pInputText id="email" [(ngModel)]="email" maxlength="100" />
+            </div>
+            <div class="field">
+                <label for="telephone">Telephone</label>
+                <p-inputMask mask="(999) 999-9999" id="telephone" [(ngModel)]="telephone" placeholder="(999) 999-9999" />
+            </div>
+            <div class="field">
+                <label for="agency">Agency</label>
+                <p-dropdown [options]="agencys" [(ngModel)]="selectedAgency" optionLabel="agencyName" optionValue="agencyId" placeholder="Select a Agency"></p-dropdown>
+            </div>
+            <div class="field">
+                <label for="timeOut">Time Out</label>
+                <input type="text" pInputText id="timeOut" [(ngModel)]="timeOut" maxlength="8"/>
+            </div>
+            <div class="field">
+                <label for="applicantType">Default Applicant Type</label>
+                <p-dropdown [options]="appTypes" [(ngModel)]="selectedApplicantType" optionLabel="name" optionValue="applicantTypeId" placeholder="Select a Applicant Type"></p-dropdown>
+            </div>
+            <ng-template pTemplate="footer">
+                <button pButton pRipple label="Clear" icon="pi pi-times" class="p-button-text" (click)="onClearClick()"></button>
+                <button pButton pRipple label="Update" icon="pi pi-check" class="p-button-text p-button-success p-modal-save-btn" [style]="{ 'margin-left': '.5em' }" (click)="onChangeClick()"></button>
+            </ng-template>
+        </p-card>
+
+    </div>
+
+    <div class="col-md-4"></div>
+</div>

@@ -1,0 +1,130 @@
+:host ::ng-deep .p-inputtext {
+    width: 100%;
+    padding: 0px 2px;
+    border-radius: 0px;
+    border: 0px solid;
+}
+
+:host ::ng-deep .p-inputtext .p-inputmask {
+    border: 1px solid !important;
+}
+
+:host ::ng-deep .p-inputtext:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+:host ::ng-deep .p-password {
+    width: 100%;
+    padding: 3px 2px;
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+:host ::ng-deep .p-dropdown {
+    width: 100%;
+    padding: 3px 2px;
+    border-radius: 0px;
+}
+
+:host ::ng-deep .p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+.field {
+    margin-bottom: .8rem;
+}
+
+.field > label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+.greenColor {
+    color: green;
+}
+
+.redColor {
+    color: red;
+}
+
+.chk-lbl {
+    margin-bottom: 0px !important;
+    margin-left: 8px;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page {
+    min-width: 2rem;
+    height: 2rem;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-next {
+    min-width: 2rem;
+    height: 2rem;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-last {
+    min-width: 2rem;
+    height: 2rem;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-first {
+    min-width: 2rem;
+    height: 2rem;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-prev {
+    min-width: 2rem;
+    height: 2rem;
+}
+
+:host ::ng-deep .p-paginator .p-dropdown {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 2rem !important;
+}
+
+:host ::ng-deep .p-dropdown .p-dropdown-label {
+    border: none !important;
+}
+
+:host ::ng-deep .p-inputmask {
+    border: 1px solid !important;
+    padding: 2px 2px;
+}
+
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    padding: .7rem;
+    border: 1px solid #dee2e6;
+    color: #fff;
+    background: #3c4b64;
+    font-weight: 700;
+    border-radius: 0px;
+    transition: box-shadow 0.2s;
+    opacity: .9;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link:hover {
+    color: #fff !important;
+    background: #3c4b64 !important;
+    opacity: 1;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link:focus {
+    box-shadow: none;
+    color: #fff !important;
+    background: #3c4b64 !important;
+    opacity: 1;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-header a {
+    background: #3c4b64 !important;
+    opacity: 1;
+    color: #fff !important;
+}
+
+:host ::ng-deep .p-accordion p-accordiontab .p-accordion-tab {
+    margin-bottom: 8px;
+}
