@@ -47,3 +47,5 @@ obj/
 bin/
 node_modules/
 .angular/
+Patient.Database.jfm
+Patient.Database.dbmdl
