@@ -1,0 +1,64 @@
+<div class="grid">
+    <div class="col-12">
+        <button pButton pRipple label="Add New" class="p-button-success" (click)="addInstitutionType()"></button>
+    </div>
+</div>
+<p-table [value]="institutionTypes"
+         dataKey="InstituteTypeId"
+         [paginator]="true"
+         [rows]="10"
+         [showCurrentPageReport]="true"
+         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+         [tableStyle]="{ 'min-width': '50rem' }"
+         [rowHover]="true"
+         [rowsPerPageOptions]="[10, 25, 50]">
+    <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+            <h5 style="text-align:center">Institution Type Information</h5>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Institution Type</th>
+            <th>Abbreviation</th>
+            <th>Action</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-institutionType>
+        <tr>
+            <td>{{ institutionType.instituteType }}</td>
+            <td>{{ institutionType.description }}</td>
+            <td>
+                <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editInstitutionType(institutionType)"></button>
+                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteInstitute(institutionType)"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-dialog [(visible)]="institutionTypeDialog" [style]="{ width: '450px' }" header="{{addEditTxt}} Institution Type" [modal]="true" [draggable]="false" [resizable]="false">
+    <ng-template pTemplate="content">
+        <div class="field">
+            <label for="instituteType">Institution Type</label>
+            <input type="text" pInputText id="instituteType" [(ngModel)]="institutionType.instituteType" required autofocus maxlength="100" />
+            <small class="p-error" *ngIf="submitted && !institutionType.instituteType">Agency Name is required.</small>
+        </div>
+        <div class="field">
+            <label for="des">Abbreviation</label>
+            <input pInputText [(ngModel)]="institutionType.description" [pKeyFilter]="'alpha'" id="des" maxlength="50" />
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideAddEditDialog()"></button>
+        <button pButton pRipple label="Save" icon="pi pi-check" class="p-button-text p-button-success p-modal-save-btn" (click)="saveInstitutionType()"></button>
+    </ng-template>
+</p-dialog>
+
+<p-toast></p-toast>
+<p-confirmDialog [style]="{ width: '450px' }" #cd>
+    <ng-template pTemplate="footer">
+        <button type="button" pButton icon="pi pi-times" label="No" class="btn-no" (click)="cd.reject()"></button>
+        <button type="button" pButton icon="pi pi-check" label="Yes" class="btn-yes" (click)="cd.accept()"></button>
+    </ng-template>
+</p-confirmDialog>

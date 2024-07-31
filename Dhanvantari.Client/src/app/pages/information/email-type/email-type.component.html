@@ -1,0 +1,82 @@
+<div class="grid">
+    <div class="col-12">
+        <button pButton pRipple label="Add New" class="p-button-success" (click)="onAdd()"></button>
+    </div>
+</div>
+<p-table [value]="emailTypes"
+         dataKey="id"
+         [paginator]="true"
+         [rows]="10"
+         [showCurrentPageReport]="true"
+         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+         [tableStyle]="{ 'min-width': '50rem' }"
+         [rowHover]="true"
+         [rowsPerPageOptions]="[10, 25, 50]">
+    <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+            <h5 style="text-align:center">Email Type Information</h5>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Email Type</th>
+            <th>Is Personal</th>
+            <th>Is Official</th>
+            <th>Action</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-emailType>
+        <tr>
+            <td>{{ emailType.type }}</td>
+            <td>{{ emailType.isPersonal === true ? 'Yes' : 'No' }}</td>
+            <td>{{ emailType.isOfficial === true ? 'Yes' : 'No' }}</td>
+            <td>
+                <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="onEdit(emailType)"></button>
+                <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="onDelete(emailType)"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-dialog [(visible)]="visibleDialog" [style]="{width: '30vw'}" [draggable]="false" [resizable]="false">
+    <ng-template pTemplate="header">
+        <span class="text-xl font-bold p-panel-header">{{ addEditTitle }} Email Type</span>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <form [formGroup]="formGroup">
+            <div class="grid">
+                <div class="col-12">
+                    <label for="emailType" class="font-bold block mb-2 mt-2">Email Type</label>
+                    <input type="text" pInputText id="emailType" formControlName="emailType" required maxlength="100" lefttrimmed autofocus (keydown.enter)="onSave()" />
+                    <small class="p-error" *ngIf="isSubmitted && f['emailType'].errors">Email Type is required.</small>
+                </div>
+                <div class="col-12">
+                    <p-checkbox inputId="isPersonal" formControlName="isPersonal" value="isPersonal" [binary]="true"  class="mr-2"></p-checkbox>
+                    <label for="isPersonal">Is Personal</label>
+                </div>
+                <div class="col-12">
+                    <p-checkbox inputId="isOfficial" formControlName="isOfficial" value="isOfficial" [binary]="true"  class="mr-2"></p-checkbox>
+                    <label for="isOfficial">Is Official</label>
+                </div>
+            </div>
+        </form>
+    </ng-template>
+    <ng-template pTemplate="footer" class="p-panel-header">
+        <div class="grid">
+            <div class="col-12">
+                <button pButton pRipple label="Cancel" class="p-button-info" (click)="onCancel()"></button>
+                <button pButton pRipple label="Clear" class="p-button-secondary" (click)="onClear()"></button>
+                <button pButton pRipple label="Save" class="p-button-success" (click)="onSave()"></button>
+            </div>
+        </div>
+    </ng-template>
+
+</p-dialog>
+
+<p-toast></p-toast>
+<p-confirmDialog [style]="{ width: '450px' }" #cd>
+    <ng-template pTemplate="footer">
+        <button type="button" pButton icon="pi pi-times" label="No" class="btn-no" (click)="cd.reject()"></button>
+        <button type="button" pButton icon="pi pi-check" label="Yes" class="btn-yes" (click)="cd.accept()"></button>
+    </ng-template>
+</p-confirmDialog>
