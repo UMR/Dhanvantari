@@ -1,24 +1,58 @@
-﻿namespace Patient.Persistence.Repositories;
+﻿using Patient.Domain;
+
+namespace Patient.Persistence.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    public Task<bool> IsActiveUser(Guid id)
+    private readonly DhanvantariDbContext _context;
+
+    public UserRepository(DhanvantariDbContext context)
     {
-        throw new NotImplementedException();
+        _context = context;
     }
 
-    public Task<bool> IsExistEmail(string email)
+    public async Task<Guid> Insert(User user)
     {
-        throw new NotImplementedException();
+        await _context.Users.AddAsync(user);
+        await _context.SaveChangesAsync();
+        return user.Id;
     }
 
-    public Task<bool> IsExistEmailExceptMe(string email, Guid id)
+    public async Task<Guid> Update(User user)
     {
-        throw new NotImplementedException();
+        _context.Users.Update(user);
+        await _context.SaveChangesAsync();
+        return user.Id;
     }
 
-    public Task<bool> IsExistUsername(string username)
+    public async Task<Guid> Delete(User user)
     {
-        throw new NotImplementedException();
+        _context.Users.Remove(user);
+        await _context.SaveChangesAsync();
+        return user.Id;
+    }
+
+    public async Task<IEnumerable<User>> GetUsers()
+    {
+        var user = await _context.Users.AsNoTracking().ToListAsync();
+        return user;
+    }
+
+    public async Task<User> Get(Guid id)
+    {
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+        return user;
+    }
+
+    public async Task<bool> IsExist(string emailOrMobile)
+    {
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email.ToUpper() == emailOrMobile.ToUpper() || u.Mobile == emailOrMobile);
+        return user != null ? true : false;
+    }
+
+    public async Task<byte> IsActive(Guid id)
+    {
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+        return user != null ? user.Status : (Byte)0;
     }
 }

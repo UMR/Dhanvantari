@@ -1,25 +1,21 @@
-﻿namespace Patient.Application.Contracts.Persistence;
+﻿using Patient.Domain;
+
+namespace Patient.Application.Contracts.Persistence;
 
 public interface IUserRepository
 {
-    //Task<Guid> Insert(User user);
+    Task<Guid> Insert(User user);
 
-    //Task<Guid> Update(User user);
+    Task<Guid> Update(User user);
 
-    //Task<Guid> Delete(User user);
+    Task<Guid> Delete(User user);
 
-    //Task<User> GetUser(string userName, string password);
+    Task<IEnumerable<User>> GetUsers();
 
-    //Task<List<User>> GetAllUser();
+    Task<User> Get(Guid id);
 
-    //Task<User> GetUser(Guid id);    
+    Task<bool> IsExist(string emailOrMobile);
 
-    Task<bool> IsExistUsername(string username);
-
-    Task<bool> IsExistEmail(string email);
-
-    Task<bool> IsExistEmailExceptMe(string email, Guid id);
-
-    Task<bool> IsActiveUser(Guid id);    
+    Task<byte> IsActive(Guid id);   
 
 }

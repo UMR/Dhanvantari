@@ -5,3 +5,4 @@ global using Microsoft.Extensions.Configuration;
 
 global using Patient.Persistence.Repositories;
 global using Patient.Application.Contracts.Persistence;
+global using Patient.Persistence.Data;
