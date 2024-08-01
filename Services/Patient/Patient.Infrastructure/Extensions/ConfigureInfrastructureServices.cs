@@ -1,6 +1,4 @@
-﻿using Resources = Patient.Infrastructure.Identity.Configurations.Resources;
-
-namespace Patient.Infrastructure.Extensions;
+﻿namespace Patient.Infrastructure.Extensions;
 
 public static class ConfigureInfrastructureServices
 {
@@ -23,18 +21,7 @@ public static class ConfigureInfrastructureServices
         .AddInMemoryClients(builder.Configuration.GetSection("IdentityServer:Clients"))
         .AddCustomUserStore();
         return builder;
-    }
-
-    public static WebApplicationBuilder AddIdentityServerServicesFromClass(this WebApplicationBuilder builder)
-    {
-        builder.Services.AddIdentityServer()
-        .AddSigningCredential(new X509Certificate2(Path.Combine("idsrv3test.pfx"), "idsrv3test"))
-        .AddInMemoryApiResources(Resources.GetApiResources())
-        .AddInMemoryApiScopes(Scopes.GetScopes())
-        .AddInMemoryClients(Clients.GetClients())
-        .AddCustomUserStore();
-        return builder;
-    }
+    }    
 
     public static WebApplicationBuilder AddIdentityAuthentication(this WebApplicationBuilder builder)
     {

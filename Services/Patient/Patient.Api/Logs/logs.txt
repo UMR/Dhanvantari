@@ -1,0 +1,481 @@
+2024-08-01 17:46:44.200 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 17:46:44.353 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 17:46:44.390 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 17:46:44.390 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 17:46:45.204 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 17:46:45.981 +06:00  INF  Now listening on: http://localhost:5204
+2024-08-01 17:46:45.981 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 17:46:45.981 +06:00  INF  Hosting environment: Development
+2024-08-01 17:46:45.981 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 17:46:47.366 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:5204/swagger/index.html - null null
+2024-08-01 17:46:48.106 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:5204/swagger/index.html - 200 null text/html;charset=utf-8 752.3989ms
+2024-08-01 17:46:48.114 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 17:46:48.117 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5495ms
+2024-08-01 17:46:48.174 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - null null
+2024-08-01 17:46:48.295 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.2093ms
+2024-08-01 17:46:48.591 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:5204/swagger/v1/swagger.json - null null
+2024-08-01 17:46:48.855 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:5204/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 264.4789ms
+2024-08-01 17:47:24.558 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:5204/api/v1/Auth/Token - application/json 50
+2024-08-01 17:47:24.592 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 17:47:24.616 +06:00  INF  CORS policy execution successful.
+2024-08-01 17:47:24.620 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 17:47:24.650 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 17:47:24.866 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 17:49:09.741 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 17:49:09.770 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 17:49:09.782 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 17:49:09.782 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 17:49:09.945 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 17:49:10.151 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 17:49:10.152 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 17:49:10.152 +06:00  INF  Hosting environment: Development
+2024-08-01 17:49:10.152 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 17:49:10.963 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger - null null
+2024-08-01 17:49:11.340 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger - 301 0 null 391.4576ms
+2024-08-01 17:49:11.343 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 17:49:11.596 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 253.0862ms
+2024-08-01 17:49:11.607 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui.css - null null
+2024-08-01 17:49:11.608 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-bundle.js - null null
+2024-08-01 17:49:11.609 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-01 17:49:11.610 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 17:49:11.615 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.0399ms
+2024-08-01 17:49:11.698 +06:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-01 17:49:11.700 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 91.0959ms
+2024-08-01 17:49:11.709 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 17:49:11.765 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.452ms
+2024-08-01 17:49:11.829 +06:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-01 17:49:11.830 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui.css - 200 152034 text/css 222.9366ms
+2024-08-01 17:49:12.335 +06:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-01 17:49:12.335 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 727.0931ms
+2024-08-01 17:49:12.808 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 17:49:12.846 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/favicon-32x32.png - null null
+2024-08-01 17:49:12.847 +06:00  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-01 17:49:12.847 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/favicon-32x32.png - 200 628 image/png 1.1752ms
+2024-08-01 17:49:13.015 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 207.6966ms
+2024-08-01 17:49:26.629 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 49
+2024-08-01 17:49:26.664 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 17:49:26.678 +06:00  INF  CORS policy execution successful.
+2024-08-01 17:49:26.680 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 17:49:26.708 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 17:49:26.844 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 17:49:48.029 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21179.7447ms.
+2024-08-01 17:49:48.033 +06:00  INF  Executing OkObjectResult, writing value of type 'IdentityModel.Client.TokenResponse'.
+2024-08-01 17:49:48.106 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 21394.666ms
+2024-08-01 17:49:48.108 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 17:49:48.161 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.Exception.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 17:49:48.169 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 500 null text/plain; charset=utf-8 21540.1755ms
+2024-08-01 17:51:10.303 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 17:51:10.345 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 17:51:10.358 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 17:51:10.358 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 17:51:10.536 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 17:51:10.719 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 17:51:10.719 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 17:51:10.719 +06:00  INF  Hosting environment: Development
+2024-08-01 17:51:10.719 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 17:51:11.514 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 17:51:11.999 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 528.8981ms
+2024-08-01 17:51:12.003 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 17:51:12.006 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5817ms
+2024-08-01 17:51:12.063 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 17:51:12.114 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.8884ms
+2024-08-01 17:51:12.621 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 17:51:12.852 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 238.2485ms
+2024-08-01 17:51:50.569 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 50
+2024-08-01 17:51:50.594 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 17:51:50.615 +06:00  INF  CORS policy execution successful.
+2024-08-01 17:51:50.617 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 17:51:50.640 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 17:51:50.757 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 17:56:19.828 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 17:56:19.872 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 17:56:19.887 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 17:56:19.887 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 17:56:20.087 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 17:56:20.287 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 17:56:20.287 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 17:56:20.287 +06:00  INF  Hosting environment: Development
+2024-08-01 17:56:20.287 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 17:56:20.992 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 17:56:21.352 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 369.5632ms
+2024-08-01 17:56:21.357 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 17:56:21.361 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.4502ms
+2024-08-01 17:56:21.427 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 17:56:21.472 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.5322ms
+2024-08-01 17:56:21.714 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 17:56:21.925 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 211.0865ms
+2024-08-01 18:02:10.881 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 18:02:10.918 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 18:02:10.928 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 18:02:10.928 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 18:02:11.093 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 18:02:11.291 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 18:02:11.292 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 18:02:11.292 +06:00  INF  Hosting environment: Development
+2024-08-01 18:02:11.292 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 18:02:11.881 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 18:02:12.240 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 370.594ms
+2024-08-01 18:02:12.246 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 18:02:12.250 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.473ms
+2024-08-01 18:02:12.297 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 18:02:12.344 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.7007ms
+2024-08-01 18:02:12.577 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 18:02:12.776 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 199.3459ms
+2024-08-01 18:02:32.719 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 55
+2024-08-01 18:02:32.749 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 18:02:32.772 +06:00  INF  CORS policy execution successful.
+2024-08-01 18:02:32.776 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:02:32.803 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 18:02:32.932 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 18:03:18.918 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45962.2987ms.
+2024-08-01 18:03:18.924 +06:00  INF  Executing OkObjectResult, writing value of type 'IdentityModel.Client.TokenResponse'.
+2024-08-01 18:03:19.000 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 46197.8161ms
+2024-08-01 18:03:19.001 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:03:19.021 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.Exception.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 18:03:19.027 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 500 null text/plain; charset=utf-8 46313.9149ms
+2024-08-01 18:04:05.038 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 18:04:05.070 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 18:04:05.079 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 18:04:05.079 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 18:04:05.244 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 18:04:05.404 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 18:04:05.405 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 18:04:05.405 +06:00  INF  Hosting environment: Development
+2024-08-01 18:04:05.405 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 18:04:06.109 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 18:04:06.458 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 357.1922ms
+2024-08-01 18:04:06.463 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 18:04:06.467 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.4905ms
+2024-08-01 18:04:06.526 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 18:04:06.574 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.2252ms
+2024-08-01 18:04:06.826 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 18:04:06.984 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.3531ms
+2024-08-01 18:04:16.959 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 50
+2024-08-01 18:04:16.994 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 18:04:17.178 +06:00  INF  CORS policy execution successful.
+2024-08-01 18:04:17.182 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:04:17.206 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 18:04:17.353 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 18:04:48.053 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30703.356ms.
+2024-08-01 18:04:48.058 +06:00  INF  Executing OkObjectResult, writing value of type 'IdentityModel.Client.TokenResponse'.
+2024-08-01 18:04:48.118 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 30939.2559ms
+2024-08-01 18:04:48.119 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:04:48.137 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.Exception.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 18:04:48.145 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 500 null text/plain; charset=utf-8 31216.7979ms
+2024-08-01 18:13:50.087 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 18:13:50.126 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 18:13:50.138 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 18:13:50.139 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 18:13:52.078 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 18:13:52.397 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 18:13:52.397 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 18:13:52.398 +06:00  INF  Hosting environment: Development
+2024-08-01 18:13:52.398 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 18:13:53.079 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 18:13:53.648 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 580.4757ms
+2024-08-01 18:13:53.653 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 18:13:53.662 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.34ms
+2024-08-01 18:13:53.721 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 18:13:53.794 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.5377ms
+2024-08-01 18:13:54.114 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 18:13:54.461 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.5544ms
+2024-08-01 18:14:04.998 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 162
+2024-08-01 18:14:05.041 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 18:14:05.062 +06:00  INF  CORS policy execution successful.
+2024-08-01 18:14:05.065 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-01 18:14:05.115 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 18:14:05.338 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) - Validation state: "Valid"
+2024-08-01 18:14:05.456 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 335.3051ms
+2024-08-01 18:14:05.458 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-01 18:14:05.532 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotImplementedException: The method or operation is not implemented.
+   at Patient.Application.Features.Users.Services.UserService.CreateAsync(UserForCreateDto request) in D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Application\Features\Users\Services\UserService.cs:line 9
+   at Patient.Api.Controllers.V1.AuthController.Register(UserForCreateDto request) in D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api\Controllers\V1\AuthController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 18:14:05.541 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 500 null text/plain; charset=utf-8 543.1491ms
+2024-08-01 18:14:26.244 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 50
+2024-08-01 18:14:26.257 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 18:14:26.259 +06:00  INF  CORS policy execution successful.
+2024-08-01 18:14:26.260 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:14:26.285 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 18:14:26.341 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 18:14:32.436 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6088.2125ms.
+2024-08-01 18:14:32.445 +06:00  INF  Executing OkObjectResult, writing value of type 'IdentityModel.Client.TokenResponse'.
+2024-08-01 18:14:32.538 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 6253.0842ms
+2024-08-01 18:14:32.539 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:14:32.542 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.Exception.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 18:14:32.546 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 500 null text/plain; charset=utf-8 6301.9838ms
+2024-08-01 18:14:41.903 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 50
+2024-08-01 18:14:41.905 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 18:14:41.909 +06:00  INF  CORS policy execution successful.
+2024-08-01 18:14:41.909 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:14:41.909 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 18:14:41.961 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) - Validation state: "Valid"
+2024-08-01 18:15:22.135 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40172.6559ms.
+2024-08-01 18:15:22.145 +06:00  INF  Executing OkObjectResult, writing value of type 'IdentityModel.Client.TokenResponse'.
+2024-08-01 18:15:22.147 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 40237.4109ms
+2024-08-01 18:15:22.147 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 18:15:22.150 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.Exception.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 18:15:22.152 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 500 null text/plain; charset=utf-8 40249.3137ms
+2024-08-01 18:18:11.940 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 18:18:11.968 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 18:18:11.972 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 18:18:11.972 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 18:18:12.088 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 18:18:12.208 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 18:18:12.208 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 18:18:12.209 +06:00  INF  Hosting environment: Development
+2024-08-01 18:18:12.209 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 18:18:12.776 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 18:18:13.054 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 280.684ms
+2024-08-01 18:18:13.067 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 18:18:13.071 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.2091ms
+2024-08-01 18:18:13.139 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 18:18:13.183 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0076ms
+2024-08-01 18:18:13.474 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 18:18:13.723 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.0292ms
+2024-08-01 18:18:57.119 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 18:18:57.185 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 18:18:57.203 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 18:18:57.203 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 18:18:57.458 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 18:18:57.745 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 18:18:57.745 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 18:18:57.745 +06:00  INF  Hosting environment: Development
+2024-08-01 18:18:57.746 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 18:18:58.468 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 18:18:59.022 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 563.2895ms
+2024-08-01 18:18:59.025 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 18:18:59.029 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.7887ms
+2024-08-01 18:18:59.092 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 18:18:59.172 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.8598ms
+2024-08-01 18:18:59.538 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 18:18:59.777 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 238.7589ms
+2024-08-01 18:19:28.388 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 193
+2024-08-01 18:19:28.557 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 18:19:28.796 +06:00  ERR  Scope recruitment.fullaccess not found in store.
+2024-08-01 18:19:28.862 +06:00  ERR  Invalid scopes requested, {"ClientId":"recruitmentweb","ClientName":"Recruitment Web Client","GrantType":"password","Scopes":null,"AuthorizationCode":"********","RefreshToken":"********","UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"test","password":"***REDACTED***","scope":"recruitment.fullaccess offline_access","client_id":"recruitmentweb","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2024-08-01 18:19:28.928 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 539.8708ms
+2024-08-01 18:22:49.562 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 18:22:49.624 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 18:22:49.640 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 18:22:49.640 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 18:22:49.842 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 18:22:50.130 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 18:22:50.130 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 18:22:50.131 +06:00  INF  Hosting environment: Development
+2024-08-01 18:22:50.131 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 18:22:51.655 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 18:22:52.156 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 505.9961ms
+2024-08-01 18:22:52.162 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 18:22:52.166 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.6409ms
+2024-08-01 18:22:52.229 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 18:22:52.411 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 182.3994ms
+2024-08-01 18:22:52.645 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 18:22:52.919 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.6382ms
+2024-08-01 18:22:56.424 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 193
+2024-08-01 18:22:56.535 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token

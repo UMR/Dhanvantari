@@ -1,6 +1,4 @@
-﻿using Patient.Domain;
-
-namespace Patient.Application.Contracts.Persistence;
+﻿namespace Patient.Application.Contracts.Persistence;
 
 public interface IUserRepository
 {

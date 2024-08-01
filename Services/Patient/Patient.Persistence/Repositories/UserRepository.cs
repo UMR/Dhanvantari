@@ -1,6 +1,4 @@
-﻿using Patient.Domain;
-
-namespace Patient.Persistence.Repositories;
+﻿namespace Patient.Persistence.Repositories;
 
 public class UserRepository : IUserRepository
 {
