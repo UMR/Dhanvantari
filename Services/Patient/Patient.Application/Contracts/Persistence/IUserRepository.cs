@@ -8,12 +8,14 @@ public interface IUserRepository
 
     Task<Guid> Delete(User user);
 
-    Task<IEnumerable<User>> GetUsers();
+    Task<IEnumerable<User>> GetAll();
 
     Task<User> Get(Guid id);
 
+    Task<User> IsValid(string emailOrMobile, string password);
+
     Task<bool> IsExist(string emailOrMobile);
 
-    Task<byte> IsActive(Guid id);   
+    Task<byte> IsActive(Guid id);    
 
 }

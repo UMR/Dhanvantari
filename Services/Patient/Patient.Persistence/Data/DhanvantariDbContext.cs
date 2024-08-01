@@ -41,6 +41,9 @@ public partial class DhanvantariDbContext : DbContext
                 .IsRequired()
                 .HasMaxLength(50);
             entity.Property(e => e.Mobile).HasMaxLength(20);
+            entity.Property(e => e.Password)
+                .IsRequired()
+                .HasMaxLength(50);
             entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
         });
 
