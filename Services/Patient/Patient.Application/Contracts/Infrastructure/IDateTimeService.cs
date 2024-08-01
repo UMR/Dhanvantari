@@ -1,4 +1,4 @@
-﻿namespace atient.Application.Contracts.Infrastructure;
+﻿namespace Patient.Application.Contracts.Infrastructure;
 
 public interface IDateTimeService
 {

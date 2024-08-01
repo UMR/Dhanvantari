@@ -7,6 +7,13 @@ global using IdentityServer4.Services;
 global using System.Security.Claims;
 global using IdentityServer4.Validation;
 global using IdentityModel;
+global using Microsoft.Extensions.DependencyInjection;
+global using IdentityServer4.AccessTokenValidation;
+global using Microsoft.AspNetCore.Builder;
+global using Patient.Infrastructure.Extensions;
+global using System.Security.Cryptography.X509Certificates;
 
+global using Patient.Infrastructure.Identity.Configurations;
+global using Patient.Infrastructure.Identity;
 global using Patient.Application.Contracts.Infrastructure;
 global using Patient.Application.Features;
