@@ -479,3 +479,160 @@
 2024-08-01 18:22:52.919 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.6382ms
 2024-08-01 18:22:56.424 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 193
 2024-08-01 18:22:56.535 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 19:56:16.260 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 19:56:16.310 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 19:56:16.326 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 19:56:16.326 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 19:56:16.509 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 19:56:16.739 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 19:56:16.739 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 19:56:16.739 +06:00  INF  Hosting environment: Development
+2024-08-01 19:56:16.739 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 19:56:18.365 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 19:56:18.916 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 556.8796ms
+2024-08-01 19:56:18.923 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 19:56:18.926 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.2416ms
+2024-08-01 19:56:18.997 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 19:56:19.077 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.3425ms
+2024-08-01 19:56:19.362 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 19:56:19.807 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 445.7616ms
+2024-08-01 19:56:25.882 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 193
+2024-08-01 19:56:26.646 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 19:56:36.401 +06:00  INF  Executed DbCommand (409ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20), @__Trim_2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE (UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) AND [u].[Password] = @__Trim_2
+2024-08-01 19:56:42.758 +06:00  INF  User authentication failed: invalid_username_or_password, details: {"ClientId":"dhanvantariweb","ClientName":"Dhanvantari Web Client","GrantType":"password","Scopes":"dhanvantari.fullaccess offline_access","AuthorizationCode":"********","RefreshToken":"********","UserName":"test","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"test","password":"***REDACTED***","scope":"dhanvantari.fullaccess offline_access","client_id":"dhanvantariweb","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2024-08-01 19:56:42.799 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 16917.727ms
+2024-08-01 19:57:14.427 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 202
+2024-08-01 19:57:14.465 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 19:57:19.951 +06:00  INF  Executed DbCommand (40ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20), @__Trim_2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE (UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) AND [u].[Password] = @__Trim_2
+2024-08-01 19:57:27.983 +06:00  ERR  Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> UserForListDto
+Patient.Persistence.User -> Patient.Application.Features.UserForListDtoAutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> UserForListDto
+Patient.Persistence.User -> Patient.Application.Features.UserForListDto
+   at lambda_method74(Closure, Object, UserForListDto, ResolutionContext)
+   at Patient.Application.Features.Users.Services.UserService.GetUserAsync(String loginId, String password) in D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Application\Features\Users\Services\UserService.cs:line 63
+   at Patient.Infrastructure.Identity.ResourceOwnerPasswordValidator.ValidateAsync(ResourceOwnerPasswordValidationContext context) in D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Infrastructure\Identity\ResourceOwnerPasswordValidator.cs:line 17
+
+2024-08-01 19:57:27.985 +06:00  INF  User authentication failed: invalid_username_or_password, details: {"ClientId":"dhanvantariweb","ClientName":"Dhanvantari Web Client","GrantType":"password","Scopes":"dhanvantari.fullaccess offline_access","AuthorizationCode":"********","RefreshToken":"********","UserName":"01721525318","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"01721525318","password":"***REDACTED***","scope":"dhanvantari.fullaccess offline_access","client_id":"dhanvantariweb","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2024-08-01 19:57:27.986 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 13559.2111ms
+2024-08-01 19:58:01.365 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 19:58:01.441 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 19:58:01.459 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 19:58:01.459 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 19:58:01.697 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 19:58:01.901 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 19:58:01.901 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 19:58:01.901 +06:00  INF  Hosting environment: Development
+2024-08-01 19:58:01.902 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 19:58:03.256 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 19:58:03.823 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 597.797ms
+2024-08-01 19:58:03.907 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 19:58:03.907 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 19:58:03.911 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.3926ms
+2024-08-01 19:58:03.987 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.228ms
+2024-08-01 19:58:04.229 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 19:58:04.539 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 310.1409ms
+2024-08-01 19:58:07.059 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 202
+2024-08-01 19:58:07.677 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 19:58:20.292 +06:00  INF  Executed DbCommand (119ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20), @__Trim_2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE (UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) AND [u].[Password] = @__Trim_2
+2024-08-01 19:58:39.118 +06:00  INF  Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-08-01 19:58:39.288 +06:00  INF  Token request validation success, {"ClientId":"dhanvantariweb","ClientName":"Dhanvantari Web Client","GrantType":"password","Scopes":"dhanvantari.fullaccess offline_access","AuthorizationCode":"********","RefreshToken":"********","UserName":"01721525318","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"01721525318","password":"***REDACTED***","scope":"dhanvantari.fullaccess offline_access","client_id":"dhanvantariweb","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2024-08-01 19:58:39.321 +06:00  INF  Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-08-01 19:58:40.258 +06:00  WRN  Certificate CN=idsrv3test has expired on 01/21/2020 04:00:00
+2024-08-01 19:58:41.591 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 200 null application/json; charset=UTF-8 34532.0019ms
+2024-08-01 19:59:52.327 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-01 19:59:52.357 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-01 19:59:52.361 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-01 19:59:52.361 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-01 19:59:52.469 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-01 19:59:52.579 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-01 19:59:52.579 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-01 19:59:52.579 +06:00  INF  Hosting environment: Development
+2024-08-01 19:59:52.579 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-01 19:59:53.006 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-01 19:59:53.391 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 387.7804ms
+2024-08-01 19:59:53.407 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-01 19:59:53.410 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.4779ms
+2024-08-01 19:59:53.481 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-01 19:59:53.531 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.3357ms
+2024-08-01 19:59:53.783 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-01 19:59:53.955 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.9933ms
+2024-08-01 20:00:12.190 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 55
+2024-08-01 20:00:12.236 +06:00  INF  No CORS policy found for the specified request.
+2024-08-01 20:00:12.256 +06:00  INF  CORS policy execution successful.
+2024-08-01 20:00:12.260 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 20:00:12.299 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-01 20:00:12.638 +06:00  INF  Executing OkObjectResult, writing value of type 'IdentityModel.Client.TokenResponse'.
+2024-08-01 20:00:12.820 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 514.5302ms
+2024-08-01 20:00:12.820 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-01 20:00:12.835 +06:00  ERR  An unhandled exception has occurred while executing the request.System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported. Path: $.Exception.TargetSite.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Reflection.MethodBase' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-01 20:00:12.850 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 500 null text/plain; charset=utf-8 660.2492ms
+2024-08-01 20:02:58.314 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 203
+2024-08-01 20:02:58.343 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 20:02:58.386 +06:00  WRN  Invalid refresh token
+2024-08-01 20:02:58.404 +06:00  WRN  Refresh token validation failed. aborting, {"ClientId":"dhanvantariweb","ClientName":"Dhanvantari Web Client","GrantType":"refresh_token","Scopes":null,"AuthorizationCode":"********","RefreshToken":"********","UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"refresh_token","refresh_token":"***REDACTED***","client_id":"dhanvantariweb","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2024-08-01 20:02:58.413 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 99.1202ms
+2024-08-01 20:03:29.948 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 203
+2024-08-01 20:03:29.958 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 20:03:29.959 +06:00  WRN  Invalid refresh token
+2024-08-01 20:03:29.962 +06:00  WRN  Refresh token validation failed. aborting, {"ClientId":"dhanvantariweb","ClientName":"Dhanvantari Web Client","GrantType":"refresh_token","Scopes":null,"AuthorizationCode":"********","RefreshToken":"********","UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"refresh_token","refresh_token":"***REDACTED***","client_id":"dhanvantariweb","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2024-08-01 20:03:29.962 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 14.463ms
+2024-08-01 20:04:23.257 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 203
+2024-08-01 20:04:23.276 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-01 20:04:23.277 +06:00  ERR  No client with id 'recruitmentweb' found. aborting
+2024-08-01 20:04:23.277 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 19.9626ms

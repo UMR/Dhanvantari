@@ -4,6 +4,6 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        //CreateMap<User, UserForListDto>().ReverseMap();       
+        CreateMap<User, UserForListDto>().ReverseMap();       
     }
 }

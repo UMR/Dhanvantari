@@ -1,6 +1,4 @@
-﻿using Patient.Application.Wrapper;
-
-namespace Patient.Application.Features;
+﻿namespace Patient.Application.Features;
 
 public interface IUserService
 {
@@ -10,12 +8,14 @@ public interface IUserService
 
     Task<BaseCommandResponse> UpdateStatusAsync(Guid guid);
 
-    Task<UserForListDto> GetUser(string userName, string password);
+    Task<BaseCommandResponse> DeleteAsync(Guid guid);
 
-    Task<UserForListDto> GetUser(Guid id);    
+    Task<UserForListDto> GetUserAsync(string loginId, string password);
 
-    Task<bool> IsActiveUser(Guid id);
+    Task<UserForListDto> GetByIdAsync(Guid id);    
 
-    Task<List<UserForListDto>> GetUsers();
+    Task<bool> IsActiveAsync(Guid id);
+
+    Task<List<UserForListDto>> GetAllAsync();
     
 }

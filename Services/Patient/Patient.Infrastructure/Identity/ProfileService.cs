@@ -17,8 +17,7 @@ public class ProfileService : IProfileService
 
         try
         {
-            var user = await _userService.GetUser(new Guid(context.Subject.GetSubjectId()));
-
+            var user = await _userService.GetByIdAsync(new Guid(context.Subject.GetSubjectId()));
             if (user != null)
             {
                 var currentUserJson = Newtonsoft.Json.JsonConvert.SerializeObject(user);
@@ -40,7 +39,7 @@ public class ProfileService : IProfileService
     {
         try
         {
-            context.IsActive = await _userService.IsActiveUser(new Guid(context.Subject.GetSubjectId()));            
+            context.IsActive = await _userService.IsActiveAsync(new Guid(context.Subject.GetSubjectId()));
         }
         catch (Exception ex)
         {

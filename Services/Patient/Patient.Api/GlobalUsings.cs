@@ -9,3 +9,5 @@ global using Patient.Persistence.Extensions;
 global using Patient.Application.Contracts.Infrastructure;
 global using Patient.Application.Features;
 global using Patient.Application.Models;
+global using Patient.Application.Contracts.Services;
+global using Patient.Api.Services;

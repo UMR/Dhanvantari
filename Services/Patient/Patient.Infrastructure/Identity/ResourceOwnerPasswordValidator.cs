@@ -14,7 +14,7 @@ public class ResourceOwnerPasswordValidator : IResourceOwnerPasswordValidator
     {
         try
         {
-            var user = await _userService.GetUser(context.UserName, context.Password);
+            var user = await _userService.GetUserAsync(context.UserName, context.Password);
             if (user != null)
             {
                 context.Result = new GrantValidationResult(user.Id.ToString(), OidcConstants.AuthenticationMethods.Password);

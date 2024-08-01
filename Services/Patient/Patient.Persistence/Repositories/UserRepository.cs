@@ -9,54 +9,52 @@ public class UserRepository : IUserRepository
         _context = context;
     }
 
-    public async Task<Guid> Insert(User user)
+    public async Task<Guid> CreateAsync(User user)
     {
         await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
         return user.Id;
     }
 
-    public async Task<Guid> Update(User user)
+    public async Task<bool> UpdateAsync(User user)
     {
         _context.Users.Update(user);
-        await _context.SaveChangesAsync();
-        return user.Id;
+        return await _context.SaveChangesAsync() > 0 ? true : false;        
     }
 
-    public async Task<Guid> Delete(User user)
+    public async Task<bool> DeleteAsync(User user)
     {
         _context.Users.Remove(user);
-        await _context.SaveChangesAsync();
-        return user.Id;
+        return await _context.SaveChangesAsync() > 0 ? true : false;        
     }
 
-    public async Task<IEnumerable<User>> GetAll()
+    public async Task<IEnumerable<User>> GetAllAsync()
     {
         var user = await _context.Users.AsNoTracking().ToListAsync();
         return user;
     }
 
-    public async Task<User> Get(Guid id)
+    public async Task<User> GetByIdAsync(Guid id)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
         return user;
     }
 
-    public async Task<User> IsValid(string emailOrMobile, string password)
+    public async Task<User> GetAsync(string loginId, string password)
     {
         var user = await _context.Users
-            .FirstOrDefaultAsync(u => (u.Email.ToUpper() == emailOrMobile.Trim().ToUpper() || u.Mobile == emailOrMobile.Trim())
+            .FirstOrDefaultAsync(u => (u.Email.ToUpper() == loginId.Trim().ToUpper() || u.Mobile == loginId.Trim())
             && u.Password == password.Trim());
         return user;
     }
 
-    public async Task<bool> IsExist(string emailOrMobile)
+    public async Task<bool> IsExistAsync(string loginId)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email.ToUpper() == emailOrMobile.Trim().ToUpper() || u.Mobile == emailOrMobile.Trim());
+        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email.ToUpper() == loginId.Trim().ToUpper() || u.Mobile == loginId.Trim());
         return user != null ? true : false;
     }
 
-    public async Task<byte> IsActive(Guid id)
+    public async Task<byte> IsActiveAsync(Guid id)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
         return user != null ? user.Status : (Byte)0;

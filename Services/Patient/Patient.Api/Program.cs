@@ -1,9 +1,8 @@
-
 const string CorsPolicy = "CorsPolicy";
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
 builder.AddApplicationServices();
 builder.AddInfrastructureServices();
 builder.AddPersistenceServices();

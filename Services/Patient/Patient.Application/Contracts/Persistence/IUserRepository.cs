@@ -2,20 +2,20 @@
 
 public interface IUserRepository
 {
-    Task<Guid> Insert(User user);
+    Task<Guid> CreateAsync(User user);
 
-    Task<Guid> Update(User user);
+    Task<bool> UpdateAsync(User user);
 
-    Task<Guid> Delete(User user);
+    Task<bool> DeleteAsync(User user);
 
-    Task<IEnumerable<User>> GetAll();
+    Task<IEnumerable<User>> GetAllAsync();
 
-    Task<User> Get(Guid id);
+    Task<User> GetByIdAsync(Guid id);
 
-    Task<User> IsValid(string emailOrMobile, string password);
+    Task<User> GetAsync(string loginId, string password);
 
-    Task<bool> IsExist(string emailOrMobile);
+    Task<bool> IsExistAsync(string loginId);
 
-    Task<byte> IsActive(Guid id);    
+    Task<byte> IsActiveAsync(Guid id);    
 
 }
