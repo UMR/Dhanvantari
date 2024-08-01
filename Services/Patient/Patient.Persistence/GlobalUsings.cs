@@ -1,1 +1,1 @@
-﻿
+﻿global using Patient.Application.Contracts.Persistence;

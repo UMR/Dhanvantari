@@ -6,4 +6,12 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Patient.Application\Patient.Application.csproj" />
+  </ItemGroup>
+
 </Project>

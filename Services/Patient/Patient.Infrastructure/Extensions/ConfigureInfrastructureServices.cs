@@ -1,6 +1,6 @@
 ﻿using Resources = Patient.Infrastructure.Identity.Configurations.Resources;
 
-namespace Patient.Infrastructure.Configurations;
+namespace Patient.Infrastructure.Extensions;
 
 public static class ConfigureInfrastructureServices
 {

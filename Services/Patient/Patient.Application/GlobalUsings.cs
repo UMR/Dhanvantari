@@ -13,3 +13,8 @@ global using AutoMapper;
 global using Newtonsoft.Json;
 global using FluentValidation.Results;
 global using IdentityModel.Client;
+global using System.ComponentModel.DataAnnotations;
+
+global using Patient.Application.Features;
+global using Patient.Application.Features.Users.Services;
+global using Patient.Application.Mappings;

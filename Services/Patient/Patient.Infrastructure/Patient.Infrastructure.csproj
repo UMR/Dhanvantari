@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Patient.Application\Patient.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
 </Project>
