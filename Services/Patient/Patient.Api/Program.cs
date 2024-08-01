@@ -1,9 +1,28 @@
+
+const string CorsPolicy = "CorsPolicy";
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.AddApplicationServices();
+builder.AddInfrastructureServices();
+builder.AddPersistenceServices();
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers(config =>
+{
+    config.Filters.Add(new AuthorizeFilter(new AuthorizationPolicyBuilder().
+        RequireAuthenticatedUser().
+        RequireClaim(builder.Configuration["IdentityServer:ClaimType"], builder.Configuration["IdentityServer:ClaimValue"]).Build()));
+});
+
+builder.Services.AddCors(o =>
+{
+    o.AddPolicy(CorsPolicy,
+        builder => builder.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader());
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -16,7 +35,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAuthentication();
 app.UseAuthorization();
+app.UseIdentityServer();
+
+app.UseCors(CorsPolicy);
 
 app.MapControllers();
 

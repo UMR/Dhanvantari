@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{15
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patient", "Patient", "{75B20B17-2260-4BB5-B022-AE7EAFB77710}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patient.Api", "Services\Patient\Patient.Api\Patient.Api.csproj", "{606B03E2-C12D-4EA4-A24A-5248C1066EAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patient.Api", "Services\Patient\Patient.Api\Patient.Api.csproj", "{606B03E2-C12D-4EA4-A24A-5248C1066EAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patient.Persistence", "Services\Patient\Patient.Persistence\Patient.Persistence.csproj", "{31E9F05C-07F9-49BC-8CC4-AEC9237D5DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patient.Persistence", "Services\Patient\Patient.Persistence\Patient.Persistence.csproj", "{31E9F05C-07F9-49BC-8CC4-AEC9237D5DF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patient.Application", "Services\Patient\Patient.Application\Patient.Application.csproj", "{A1266461-F7A4-49BB-A7AB-0115416604D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patient.Application", "Services\Patient\Patient.Application\Patient.Application.csproj", "{A1266461-F7A4-49BB-A7AB-0115416604D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patient.Infrastructure", "Services\Patient\Patient.Infrastructure\Patient.Infrastructure.csproj", "{68CFB3F5-1933-4B56-9EFA-4B4961CD72A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patient.Infrastructure", "Services\Patient\Patient.Infrastructure\Patient.Infrastructure.csproj", "{68CFB3F5-1933-4B56-9EFA-4B4961CD72A4}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Patient.Database", "Services\Patient\Patient.Database\Patient.Database.sqlproj", "{8FB5FD9C-08CF-436B-B439-2A105BC85C83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patient.DI", "Services\Patient\Patient.DI\Patient.DI.csproj", "{B7B68C05-96D9-4C50-918A-7CD529EC6E35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{8FB5FD9C-08CF-436B-B439-2A105BC85C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FB5FD9C-08CF-436B-B439-2A105BC85C83}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FB5FD9C-08CF-436B-B439-2A105BC85C83}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B7B68C05-96D9-4C50-918A-7CD529EC6E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B68C05-96D9-4C50-918A-7CD529EC6E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B68C05-96D9-4C50-918A-7CD529EC6E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B68C05-96D9-4C50-918A-7CD529EC6E35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{A1266461-F7A4-49BB-A7AB-0115416604D6} = {75B20B17-2260-4BB5-B022-AE7EAFB77710}
 		{68CFB3F5-1933-4B56-9EFA-4B4961CD72A4} = {75B20B17-2260-4BB5-B022-AE7EAFB77710}
 		{8FB5FD9C-08CF-436B-B439-2A105BC85C83} = {75B20B17-2260-4BB5-B022-AE7EAFB77710}
+		{B7B68C05-96D9-4C50-918A-7CD529EC6E35} = {75B20B17-2260-4BB5-B022-AE7EAFB77710}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AF05F9C-4C3D-4B55-94B2-61DEA2A799C2}
