@@ -12,7 +12,7 @@ public class AuthService : IAuthService
         _httpClient = httpClient;
         _configuration = configuration;
         _logger = logger;
-        _address = _configuration.GetSection("IdentityServer")["IssuerUri"];
+        _address = _configuration.GetSection("IdentityServer")["ValidIssuer"];
     }
 
     public async Task<TokenResponse> GetToken(string username, string password)
@@ -25,9 +25,9 @@ public class AuthService : IAuthService
             {
                 Address = $"{_address}/connect/token",
                 GrantType = "password",
-                ClientId = "recruitmentweb",
+                ClientId = "dhanvantariweb",
                 ClientSecret = "s*|9%2~*=95*+|t8*~3**%;U73*+-c",
-                Scope = "inventory.fullaccess offline_access",
+                Scope = "dhanvantari.fullaccess offline_access",
                 UserName = username,
                 Password = password
             });
@@ -51,7 +51,7 @@ public class AuthService : IAuthService
                 Address = $"{_address}/connect/token",
                 GrantType = "refresh_token",
                 RefreshToken = refreshToken,
-                ClientId = "recruitmentweb",
+                ClientId = "dhanvantariweb",
                 ClientSecret = "s*|9%2~*=95*+|t8*~3**%;U73*+-c"
             });                
         }
