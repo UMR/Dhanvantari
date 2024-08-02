@@ -50,3 +50,4 @@ node_modules/
 Patient.Database.jfm
 Patient.Database.dbmdl
 dist/
+Patient.Api/Logs/logs.txt

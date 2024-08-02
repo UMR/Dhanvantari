@@ -636,3 +636,211 @@ WHERE [u].[Id] = @__id_0
 2024-08-01 20:04:23.276 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
 2024-08-01 20:04:23.277 +06:00  ERR  No client with id 'recruitmentweb' found. aborting
 2024-08-01 20:04:23.277 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 400 null application/json; charset=UTF-8 19.9626ms
+2024-08-02 16:58:30.475 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-02 16:58:30.601 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-02 16:58:30.632 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-02 16:58:30.632 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-02 16:58:31.137 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 16:58:31.262 +06:00  INF  Creating key {c1c3a456-736e-49a6-8902-e30f2b1065e7} with creation date 2024-08-02 10:58:31Z, activation date 2024-08-04 10:20:28Z, and expiration date 2024-10-31 10:58:31Z.
+2024-08-02 16:58:31.271 +06:00  INF  Writing data to file 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys\key-c1c3a456-736e-49a6-8902-e30f2b1065e7.xml'.
+2024-08-02 16:58:31.625 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-02 16:58:31.626 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 16:58:31.626 +06:00  INF  Hosting environment: Development
+2024-08-02 16:58:31.626 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-02 16:58:32.539 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 16:58:32.987 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 453.2871ms
+2024-08-02 16:58:32.989 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 16:58:32.990 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.css - null null
+2024-08-02 16:58:32.990 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 16:58:33.007 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 18.6952ms
+2024-08-02 16:58:33.008 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 18.0861ms
+2024-08-02 16:58:33.015 +06:00  INF  The file /index.css was not modified
+2024-08-02 16:58:33.016 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.css - 304 null text/css 26.4927ms
+2024-08-02 16:58:33.063 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 16:58:33.126 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.9431ms
+2024-08-02 16:58:33.330 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 16:58:33.514 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 184.4436ms
+2024-08-02 17:00:13.989 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-02 17:00:14.021 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-02 17:00:14.032 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-02 17:00:14.032 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-02 17:00:14.196 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 17:00:14.395 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-02 17:00:14.395 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:00:14.395 +06:00  INF  Hosting environment: Development
+2024-08-02 17:00:14.396 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-02 17:00:15.033 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 17:00:15.392 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 371.059ms
+2024-08-02 17:00:15.398 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:00:15.398 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 17:00:15.401 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.9486ms
+2024-08-02 17:00:15.402 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 4.2336ms
+2024-08-02 17:00:15.453 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 17:00:15.496 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.1212ms
+2024-08-02 17:00:15.714 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 17:00:15.940 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 225.9567ms
+2024-08-02 17:01:15.192 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 166
+2024-08-02 17:01:15.228 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:01:15.255 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:01:15.259 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:01:15.303 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:01:16.473 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) - Validation state: "Valid"
+2024-08-02 17:01:38.761 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22281.0068ms.
+2024-08-02 17:01:38.768 +06:00  INF  Executing OkObjectResult, writing value of type 'Patient.Application.Wrapper.BaseCommandResponse'.
+2024-08-02 17:01:38.795 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 23485.3499ms
+2024-08-02 17:01:38.796 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:01:38.798 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 200 null application/json; charset=utf-8 23605.3779ms
+2024-08-02 17:02:33.630 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 17:02:33.683 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 52.632ms
+2024-08-02 17:02:33.697 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:02:33.697 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 17:02:33.698 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.319ms
+2024-08-02 17:02:33.699 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 2.3387ms
+2024-08-02 17:02:33.731 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 17:02:33.767 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.6299ms
+2024-08-02 17:02:33.952 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 17:02:33.975 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.2415ms
+2024-08-02 17:03:07.217 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 166
+2024-08-02 17:03:07.237 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:03:07.238 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:03:07.239 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:03:07.254 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:03:07.287 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) - Validation state: "Valid"
+2024-08-02 17:07:15.023 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 247734.0631ms.
+2024-08-02 17:07:15.039 +06:00  INF  Executing OkObjectResult, writing value of type 'Patient.Application.Wrapper.BaseCommandResponse'.
+2024-08-02 17:07:15.058 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 247802.2105ms
+2024-08-02 17:07:15.065 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:07:15.066 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 200 null application/json; charset=utf-8 247847.8884ms
+2024-08-02 17:07:16.165 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 17:07:16.243 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 77.9911ms
+2024-08-02 17:07:16.256 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 17:07:16.256 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:07:16.256 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.3018ms
+2024-08-02 17:07:16.258 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 2.0506ms
+2024-08-02 17:07:16.310 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 17:07:16.322 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.994ms
+2024-08-02 17:07:16.872 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 17:07:16.878 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.6503ms
+2024-08-02 17:07:49.986 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 167
+2024-08-02 17:07:49.989 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:07:49.993 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:07:49.993 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:07:49.998 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:07:50.027 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) - Validation state: "Valid"
+2024-08-02 17:49:11.692 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-02 17:49:11.727 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-02 17:49:11.739 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-02 17:49:11.739 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-02 17:49:11.912 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 17:49:12.095 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-02 17:49:12.095 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:49:12.096 +06:00  INF  Hosting environment: Development
+2024-08-02 17:49:12.096 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-02 17:49:13.119 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 17:49:13.481 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 374.4536ms
+2024-08-02 17:49:13.489 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:49:13.489 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 17:49:13.493 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.4375ms
+2024-08-02 17:49:13.494 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 5.0802ms
+2024-08-02 17:49:13.552 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 17:49:13.611 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.2248ms
+2024-08-02 17:49:14.131 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 17:49:14.305 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 173.9628ms
+2024-08-02 17:49:43.643 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 166
+2024-08-02 17:49:43.678 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:49:43.698 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:49:43.701 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:49:43.722 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:49:44.058 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) - Validation state: "Valid"
+2024-08-02 17:52:23.122 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-02 17:52:23.159 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-02 17:52:23.168 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-02 17:52:23.168 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-02 17:52:23.329 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 17:52:23.568 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-02 17:52:23.569 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:52:23.569 +06:00  INF  Hosting environment: Development
+2024-08-02 17:52:23.569 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-02 17:52:23.936 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 17:52:24.293 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 380.6646ms
+2024-08-02 17:52:24.299 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 17:52:24.299 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:52:24.302 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5495ms
+2024-08-02 17:52:24.303 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 3.915ms
+2024-08-02 17:52:24.351 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 17:52:24.395 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.3687ms
+2024-08-02 17:52:24.638 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 17:52:24.829 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.1155ms
+2024-08-02 17:52:38.734 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 163
+2024-08-02 17:52:38.762 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:52:38.774 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:52:38.777 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:52:38.798 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:52:39.146 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) - Validation state: "Valid"
+2024-08-02 17:55:44.778 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-02 17:55:44.797 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-02 17:55:44.799 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-02 17:55:44.800 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-02 17:55:44.858 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 17:55:44.917 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-02 17:55:44.917 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-02 17:55:44.917 +06:00  INF  Hosting environment: Development
+2024-08-02 17:55:44.918 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-02 17:55:45.548 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-02 17:55:45.748 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 201.4443ms
+2024-08-02 17:55:45.758 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-02 17:55:45.758 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-02 17:55:45.761 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.0888ms
+2024-08-02 17:55:45.761 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 2.6793ms
+2024-08-02 17:55:45.821 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-02 17:55:45.855 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3628ms
+2024-08-02 17:55:46.066 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-02 17:55:46.230 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.7366ms
+2024-08-02 17:56:13.760 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 159
+2024-08-02 17:56:13.778 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:56:13.789 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:56:13.790 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:56:13.808 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:56:16.459 +06:00  INF  Executed DbCommand (204ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 100), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 20), @p7='?' (Size = 50), @p8='?' (Size = 1) (DbType = Byte), @p9='?' (DbType = Guid), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([CreatedBy], [CreatedDate], [DateOfBirth], [Email], [FirstName], [LastName], [Mobile], [Password], [Status], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2024-08-02 17:56:16.546 +06:00  INF  Executing OkObjectResult, writing value of type 'Patient.Application.Wrapper.BaseCommandResponse'.
+2024-08-02 17:56:16.569 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 2756.5622ms
+2024-08-02 17:56:16.569 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:56:16.578 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 200 null application/json; charset=utf-8 2818.4468ms
+2024-08-02 17:57:17.514 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 178
+2024-08-02 17:57:17.521 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:57:17.522 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:57:17.523 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:57:17.523 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:57:17.643 +06:00  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-02 17:57:17.682 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 159.0345ms
+2024-08-02 17:57:17.682 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:57:17.682 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 400 null application/problem+json; charset=utf-8 168.6583ms
+2024-08-02 17:57:32.614 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 179
+2024-08-02 17:57:32.616 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:57:32.619 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:57:32.619 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:57:32.619 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:57:32.626 +06:00  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-02 17:57:32.627 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 7.7687ms
+2024-08-02 17:57:32.627 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:57:32.627 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 400 null application/problem+json; charset=utf-8 12.6289ms
+2024-08-02 17:57:50.984 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - application/json 180
+2024-08-02 17:57:50.984 +06:00  INF  No CORS policy found for the specified request.
+2024-08-02 17:57:50.985 +06:00  INF  CORS policy execution successful.
+2024-08-02 17:57:50.985 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:57:50.985 +06:00  INF  Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Patient.Application.Features.UserForCreateDto) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-02 17:57:51.045 +06:00  INF  Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 100), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 20), @p7='?' (Size = 50), @p8='?' (Size = 1) (DbType = Byte), @p9='?' (DbType = Guid), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([CreatedBy], [CreatedDate], [DateOfBirth], [Email], [FirstName], [LastName], [Mobile], [Password], [Status], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2024-08-02 17:57:51.046 +06:00  INF  Executing OkObjectResult, writing value of type 'Patient.Application.Wrapper.BaseCommandResponse'.
+2024-08-02 17:57:51.046 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 61.5023ms
+2024-08-02 17:57:51.046 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
+2024-08-02 17:57:51.047 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 200 null application/json; charset=utf-8 62.6886ms

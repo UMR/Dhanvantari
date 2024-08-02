@@ -12,9 +12,36 @@ public class UserService : BaseService, IUserService
         _userRepo = userRepo;
     }
 
-    public Task<BaseCommandResponse> CreateAsync(UserForCreateDto request)
+    public async Task<BaseCommandResponse> CreateAsync(UserForCreateDto request)
     {
-        throw new NotImplementedException();
+        var response = new BaseCommandResponse();
+        var validator = new UserForCreateDtoValidator(_serviceProvider);
+        var validationResult = await validator.ValidateAsync(request);
+
+        if (validationResult.IsValid == false)
+        {
+            response.Success = false;
+            response.Message = "Creating Failed";
+            response.Errors = validationResult.Errors.Select(e => e.ErrorMessage).ToArray();
+            return response;
+        }        
+
+        var entity = new User
+        {            
+            FirstName = request.FirstName,
+            LastName = request.LastName,
+            Mobile = request.Mobile,
+            Email = request.Email,
+            Password = request.Password,           
+            CreatedDate = DateTime.Now,            
+            UpdatedDate = DateTime.Now            
+        };
+
+        await _userRepo.CreateAsync(entity);
+
+        response.Success = true;
+        response.Message = "Creating Successful";
+        return response;
     }
 
     public Task<BaseCommandResponse> UpdateAsync(Guid guid, UserForUpdateDto request)
