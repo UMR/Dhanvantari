@@ -31,7 +31,6 @@ public class UserForCreateDtoValidator : AbstractValidator<UserForCreateDto>
             .MaximumLength(100)
             .WithMessage("{PropertyName} must not exceed 100 characters");
 
-
         RuleFor(a => a.Password)
             .NotEmpty()
             .WithMessage("{PropertyName} is required")
