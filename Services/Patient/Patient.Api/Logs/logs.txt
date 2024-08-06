@@ -844,3 +844,69 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
 2024-08-02 17:57:51.046 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.Register (Patient.Api) in 61.5023ms
 2024-08-02 17:57:51.046 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.Register (Patient.Api)'
 2024-08-02 17:57:51.047 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Register - 200 null application/json; charset=utf-8 62.6886ms
+2024-08-06 14:06:43.168 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 14:06:43.278 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 14:06:43.309 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 14:06:43.309 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 14:06:43.810 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 14:06:44.204 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 14:06:44.205 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 14:06:44.205 +06:00  INF  Hosting environment: Development
+2024-08-06 14:06:44.205 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 14:06:44.573 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger - null null
+2024-08-06 14:06:44.894 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger - 301 0 null 322.9054ms
+2024-08-06 14:06:44.898 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 14:06:44.955 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 57.0247ms
+2024-08-06 14:06:44.960 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui.css - null null
+2024-08-06 14:06:44.960 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.css - null null
+2024-08-06 14:06:44.962 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-bundle.js - null null
+2024-08-06 14:06:44.962 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-06 14:06:44.963 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 14:06:44.963 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 14:06:44.964 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 0.752ms
+2024-08-06 14:06:44.965 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.7598ms
+2024-08-06 14:06:44.971 +06:00  INF  Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2024-08-06 14:06:44.971 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.css - 200 202 text/css 10.6182ms
+2024-08-06 14:06:44.978 +06:00  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-06 14:06:44.978 +06:00  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-06 14:06:44.979 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui.css - 200 152034 text/css 19.1572ms
+2024-08-06 14:06:44.979 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 16.4853ms
+2024-08-06 14:06:45.000 +06:00  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-06 14:06:45.001 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 38.3292ms
+2024-08-06 14:06:45.013 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 14:06:45.057 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.2286ms
+2024-08-06 14:06:45.330 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 14:06:45.358 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/favicon-32x32.png - null null
+2024-08-06 14:06:45.359 +06:00  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-06 14:06:45.359 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/favicon-32x32.png - 200 628 image/png 1.1154ms
+2024-08-06 14:06:45.447 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.3371ms
+2024-08-06 14:07:14.248 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - application/json 55
+2024-08-06 14:07:14.284 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 14:07:14.296 +06:00  INF  CORS policy execution successful.
+2024-08-06 14:07:14.300 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-06 14:07:14.330 +06:00  INF  Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Patient.Application.Models.TokenRequest) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-06 14:07:15.453 +06:00  INF  Start processing HTTP request POST http://localhost:8001/connect/token
+2024-08-06 14:07:15.455 +06:00  INF  Sending HTTP request POST http://localhost:8001/connect/token
+2024-08-06 14:07:15.459 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/connect/token - application/x-www-form-urlencoded 100
+2024-08-06 14:07:15.484 +06:00  INF  Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2024-08-06 14:07:17.905 +06:00  INF  Executed DbCommand (110ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20), @__Trim_2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE (UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) AND [u].[Password] = @__Trim_2
+2024-08-06 14:07:18.082 +06:00  INF  Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-08-06 14:07:18.109 +06:00  INF  Token request validation success, {"ClientId":"dhanvantariweb","ClientName":"Dhanvantari Web Client","GrantType":"password","Scopes":"dhanvantari.fullaccess offline_access","AuthorizationCode":"********","RefreshToken":"********","UserName":"01721525318","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","username":"01721525318","password":"***REDACTED***","scope":"dhanvantari.fullaccess offline_access"},"$type":"TokenRequestValidationLog"}
+2024-08-06 14:07:18.131 +06:00  INF  Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Password], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-08-06 14:07:18.500 +06:00  WRN  Certificate CN=idsrv3test has expired on 01/21/2020 04:00:00
+2024-08-06 14:07:19.181 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/connect/token - 200 null application/json; charset=UTF-8 3721.4841ms
+2024-08-06 14:07:19.187 +06:00  INF  Received HTTP response headers after 3719.1144ms - 200
+2024-08-06 14:07:19.189 +06:00  INF  End processing HTTP request after 3740.3106ms - 200
+2024-08-06 14:07:19.224 +06:00  INF  Executing OkObjectResult, writing value of type 'Patient.Application.Models.TokenResponse'.
+2024-08-06 14:07:19.231 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 4896.8329ms
+2024-08-06 14:07:19.231 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
+2024-08-06 14:07:19.231 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 200 null application/json; charset=utf-8 4983.1116ms
