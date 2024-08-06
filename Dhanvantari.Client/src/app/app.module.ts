@@ -1,50 +1,42 @@
 import { NgModule } from '@angular/core';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { BrowserModule, Title } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// Import routing module
-import { AppRoutingModule } from './app-routing.module';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-// Import app component
+import 'jquery';
+import 'bootstrap';
+import 'chart.js';
+// import "@ng-bootstrap/ng-bootstrap";
+
+import 'ionicons';
+import 'lodash';
+import 'rxjs';
+
+import '../../src/assets/javascript/adminlte';
+import '../../src/assets/javascript/demo';
+import { BehaviorSubject } from 'rxjs';
+
 import { AppComponent } from './app.component';
 
+import { CoreModule } from './core/core.module';
+import { AppRoutingModule } from './app.routing.module';
 
-import { SpinnerComponent } from '../app/common/component/spinner/spinner.component';
-
-
-import { LoginComponent } from './login/login.component';
-import { LoginService } from './login/login.service';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { AuthService } from './common/service/auth.service';
-import { AuthInterceptorService } from './common/service/auth-interceptor.service';
-import { AuthGuard } from './auth.guard';
-import { TooltipModule } from 'primeng/tooltip';
-import { RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { SidebarComponent } from './common/component/sidebar/sidebar.component';
-import { HeaderComponent } from './common/component/header/header.component';
-
-
+import { NgSelectModule } from '@ng-select/ng-select';
+import 'zone.js';
 
 @NgModule({
-  declarations: [LoginComponent, SidebarComponent, DashboardComponent, HeaderComponent, AppComponent, SpinnerComponent],
-
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    AppRoutingModule, 
     FormsModule,
-    TooltipModule
+    HttpClientModule,
+    AppRoutingModule,
+    NgxDatatableModule,
+    ReactiveFormsModule,
+    CoreModule,
+    NgSelectModule,
   ],
-
-  providers: [ {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true },
-    AuthService,
-    AuthGuard,
-    LoginService],
-
-  bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

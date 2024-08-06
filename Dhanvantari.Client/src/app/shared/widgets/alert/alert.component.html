@@ -1,0 +1,7 @@
+<div class="box-body" *ngIf="showAlert()">
+	<div [ngClass]="getAlertBoxCss()">
+		<!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+    <h4><i [ngClass]="getAlertIconCss()"></i> {{ alert.alertIconMessage }}</h4>
+		{{alert.alertBoxMessage}}
+	</div>
+</div>

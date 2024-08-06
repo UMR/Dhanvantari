@@ -1,0 +1,27 @@
+<aside class="main-sidebar">
+  <section class="sidebar">
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="header">MAIN NAVIGATION</li>
+     
+      <li class="treeview" [routerLinkActive]="'active'">
+        <a style="cursor:pointer" [routerLink]="'/'">
+          <i class="fa fa-dashboard"></i>
+          <span>Dashbard</span>
+         
+        </a>
+      </li>
+      <li class="treeview" [routerLinkActive]="'active'">
+        <a style="cursor:pointer" [routerLink]="'/demographics'">
+          <i class="fa fa-gears"></i>
+          <span>Demographics</span>
+        </a>
+      </li>
+      <li class="treeview" [routerLinkActive]="'active'">
+        <a style="cursor:pointer" [routerLink]="'/change-password'">
+          <i class="fa fa-gears"></i>
+          <span>Change Password</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</aside>

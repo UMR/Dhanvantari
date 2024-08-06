@@ -1,0 +1,105 @@
+<header class="main-header">
+	<a href="https://adminlte-angular.stackblitz.io/" class="logo">
+		<span class="logo-mini"><b>P</b>P</span>
+      <span class="logo-lg"><b>Patient</b> Portal</span>
+    </a>
+    <nav class="navbar navbar-static-top">     
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success"> {{messages.length }} </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have  {{messages.length }} messages</li>
+              <li>
+                <ul class="menu">
+                  <li *ngFor="let message of messages"> 
+                    <a [class.disabled]="true">
+                      <div class="pull-left">
+                        <img [src]="message.imgSource" class="img-circle" alt="Sohel Rana">
+                      </div>
+                      <h4>
+                       {{ message.team}}
+                        <small><i class="fa fa-clock-o"></i> {{message.time}}</small>
+                      </h4>
+                      <p> {{message.suggestion}}</p>
+                    </a>
+                  </li>  
+                </ul>
+              </li>
+              <li class="footer"><a  [routerLink]="'/mail/inbox'">See All Messages</a></li>
+            </ul>
+          </li>
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning"> {{notifications.length }} </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have {{notifications.length }}  notifications</li>
+              <li>
+                <ul class="menu">
+                  <li *ngFor="let notification of notifications">
+                    <a [class.disabled]="true">
+                      <i [ngClass]="notification.ngclass"></i>
+                      {{notification.notification}}
+                    </a>
+                  </li>                   
+                </ul>
+              </li>
+              <li class="footer"><a [class.disabled]="true">View all</a></li>
+            </ul>
+          </li>          
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../../../assets/images/user.jpg" class="user-image" alt="Sohel Rana">
+              <!-- <span class="hidden-xs"> {{ user?.firstName }} {{ user?.lastName }} </span> -->
+              <span class="hidden-xs"> Sohel Rana </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="user-header">
+                <img src="../../../../assets/images/user.jpg" class="img-circle" alt="Sohel Rana">
+                <p>
+                   {{ user?.firstName }} {{ user?.lastName }} - Coder
+                  <small>Member since Nov. 2008</small>
+                  <small>Code never lies, comments sometimes do.</small>
+                </p>
+              </li>
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a [class.disabled]="true">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a [class.disabled]="true">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a [class.disabled]="true">Friends</a>
+                  </div>
+                </div>
+              </li>
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a  [class.disabled]="true" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a (click)="onSignOut()" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
