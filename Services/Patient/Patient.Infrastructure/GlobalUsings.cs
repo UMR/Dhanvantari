@@ -12,7 +12,9 @@ global using IdentityServer4.AccessTokenValidation;
 global using Microsoft.AspNetCore.Builder;
 global using Patient.Infrastructure.Extensions;
 global using System.Security.Cryptography.X509Certificates;
+global using Microsoft.Extensions.Caching.Memory;
 
 global using Patient.Infrastructure.Identity;
 global using Patient.Application.Contracts.Infrastructure;
 global using Patient.Application.Features;
+global using Patient.Infrastructure.Otp;

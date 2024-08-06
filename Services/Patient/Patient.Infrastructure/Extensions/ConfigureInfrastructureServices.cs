@@ -6,8 +6,10 @@ public static class ConfigureInfrastructureServices
     {
         builder.AddIdentityServerServicesFromAppSettings();
         builder.AddIdentityAuthentication();
+        builder.Services.AddMemoryCache();
         builder.Services.AddScoped<IDateTimeService, DateTimeService>();
         builder.Services.AddScoped<IAuthService, AuthService>();
+        builder.Services.AddTransient<IOtpService, OtpService>();
 
         return builder;
     }

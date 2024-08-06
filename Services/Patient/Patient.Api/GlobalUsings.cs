@@ -11,3 +11,4 @@ global using Patient.Application.Features;
 global using Patient.Application.Models;
 global using Patient.Application.Contracts.Services;
 global using Patient.Api.Services;
+global using Patient.Infrastructure.Otp;

@@ -910,3 +910,240 @@ WHERE [u].[Id] = @__id_0
 2024-08-06 14:07:19.231 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api) in 4896.8329ms
 2024-08-06 14:07:19.231 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetToken (Patient.Api)'
 2024-08-06 14:07:19.231 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 200 null application/json; charset=utf-8 4983.1116ms
+2024-08-06 15:24:21.692 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:24:21.720 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:24:21.724 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:24:21.724 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:24:21.819 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:24:21.915 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:24:21.915 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:24:21.915 +06:00  INF  Hosting environment: Development
+2024-08-06 15:24:21.915 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:24:32.618 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:24:32.897 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 280.1244ms
+2024-08-06 15:24:32.906 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 15:24:32.907 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 15:24:32.910 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.4687ms
+2024-08-06 15:24:32.911 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 3.9685ms
+2024-08-06 15:24:32.960 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 15:24:33.008 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.6406ms
+2024-08-06 15:24:33.494 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 15:24:33.626 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.9608ms
+2024-08-06 15:24:44.125 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:24:44.176 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:24:44.196 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:24:44.196 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:24:44.433 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:24:44.688 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:24:44.689 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:24:44.689 +06:00  INF  Hosting environment: Development
+2024-08-06 15:24:44.689 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:24:46.669 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:25:36.130 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:25:36.176 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:25:36.195 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:25:36.196 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:25:36.426 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:25:36.669 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:25:36.670 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:25:36.670 +06:00  INF  Hosting environment: Development
+2024-08-06 15:25:36.670 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:25:38.660 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:25:38.990 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 337.9169ms
+2024-08-06 15:25:39.026 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 15:25:39.027 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 15:25:39.032 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.3156ms
+2024-08-06 15:25:39.040 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 12.1877ms
+2024-08-06 15:25:39.091 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 15:25:39.151 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.6897ms
+2024-08-06 15:25:39.347 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 15:27:22.195 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:27:22.238 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:27:22.257 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:27:22.257 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:27:22.480 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:27:22.727 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:27:22.728 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:27:22.728 +06:00  INF  Hosting environment: Development
+2024-08-06 15:27:22.728 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:27:24.394 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:27:24.792 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 407.4289ms
+2024-08-06 15:27:24.795 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 15:27:24.795 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 15:27:24.799 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.6468ms
+2024-08-06 15:27:24.801 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 5.2486ms
+2024-08-06 15:27:24.853 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 15:27:24.911 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.0369ms
+2024-08-06 15:27:25.093 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 15:27:25.283 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.0628ms
+2024-08-06 15:28:11.735 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/Otp/generate - application/json 22
+2024-08-06 15:28:11.806 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 15:28:11.826 +06:00  INF  CORS policy execution successful.
+2024-08-06 15:28:11.831 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:28:11.865 +06:00  INF  Route matched with {action = "GenerateOtp", controller = "Otp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateOtp(System.String) on controller Patient.Api.Controllers.V1.OtpController (Patient.Api).
+2024-08-06 15:28:11.889 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api) in 15.9764ms
+2024-08-06 15:28:11.893 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:28:11.934 +06:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'Patient.Infrastructure.Otp.OtpService' while attempting to activate 'Patient.Api.Controllers.V1.OtpController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-06 15:28:11.945 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/generate - 500 null text/plain; charset=utf-8 210.1343ms
+2024-08-06 15:29:01.612 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:29:01.655 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:29:01.669 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:29:01.669 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:29:01.848 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:29:02.037 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:29:02.038 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:29:02.038 +06:00  INF  Hosting environment: Development
+2024-08-06 15:29:02.038 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:29:03.106 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:29:03.491 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 391.228ms
+2024-08-06 15:29:03.496 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 15:29:03.497 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 15:29:03.501 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.6212ms
+2024-08-06 15:29:03.502 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 5.1811ms
+2024-08-06 15:29:03.544 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 15:29:03.625 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.5967ms
+2024-08-06 15:29:03.813 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 15:29:03.979 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.9003ms
+2024-08-06 15:29:28.127 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/Otp/generate - application/json 9
+2024-08-06 15:29:28.182 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 15:29:28.210 +06:00  INF  CORS policy execution successful.
+2024-08-06 15:29:28.215 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:29:28.253 +06:00  INF  Route matched with {action = "GenerateOtp", controller = "Otp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateOtp(System.String) on controller Patient.Api.Controllers.V1.OtpController (Patient.Api).
+2024-08-06 15:29:28.272 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api) in 11.3126ms
+2024-08-06 15:29:28.274 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:29:28.300 +06:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'Patient.Infrastructure.Otp.OtpService' while attempting to activate 'Patient.Api.Controllers.V1.OtpController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-06 15:29:28.309 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/generate - 500 null text/plain; charset=utf-8 183.0421ms
+2024-08-06 15:30:44.026 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:30:44.072 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:30:44.086 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:30:44.086 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:30:44.306 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:30:44.504 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:30:44.504 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:30:44.504 +06:00  INF  Hosting environment: Development
+2024-08-06 15:30:44.504 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:30:45.978 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:30:46.330 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 359.0741ms
+2024-08-06 15:30:46.332 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 15:30:46.332 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 15:30:46.337 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.7313ms
+2024-08-06 15:30:46.337 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 5.1873ms
+2024-08-06 15:30:46.384 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 15:30:46.429 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.7129ms
+2024-08-06 15:30:46.657 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 15:30:46.819 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 161.7874ms
+2024-08-06 15:30:58.254 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/Otp/generate - application/json 8
+2024-08-06 15:30:58.306 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 15:30:58.327 +06:00  INF  CORS policy execution successful.
+2024-08-06 15:30:58.332 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:30:58.376 +06:00  INF  Route matched with {action = "GenerateOtp", controller = "Otp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateOtp(System.String) on controller Patient.Api.Controllers.V1.OtpController (Patient.Api).
+2024-08-06 15:30:58.392 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api) in 10.3268ms
+2024-08-06 15:30:58.394 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:30:58.432 +06:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'Patient.Infrastructure.Otp.OtpService' while attempting to activate 'Patient.Api.Controllers.V1.OtpController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-08-06 15:30:58.443 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/generate - 500 null text/plain; charset=utf-8 189.0408ms
+2024-08-06 15:31:55.358 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-06 15:31:55.398 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-06 15:31:55.415 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-06 15:31:55.415 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-06 15:31:55.613 +06:00  INF  User profile is available. Using 'C:\Users\kapta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-06 15:31:55.849 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-06 15:31:55.849 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-06 15:31:55.849 +06:00  INF  Hosting environment: Development
+2024-08-06 15:31:55.849 +06:00  INF  Content root path: D:\AEL Git Projects\Services\Patient\Patient.Api
+2024-08-06 15:31:57.538 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-06 15:31:57.824 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-06 15:31:57.829 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 299.7545ms
+2024-08-06 15:31:57.838 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 14.2627ms
+2024-08-06 15:31:57.898 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-06 15:31:57.909 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-06 15:31:57.921 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 23.7371ms
+2024-08-06 15:31:57.978 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.1661ms
+2024-08-06 15:31:58.114 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-06 15:31:58.261 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.6822ms
+2024-08-06 15:32:19.587 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/Otp/generate - application/json 13
+2024-08-06 15:32:19.634 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 15:32:19.651 +06:00  INF  CORS policy execution successful.
+2024-08-06 15:32:19.656 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:32:19.681 +06:00  INF  Route matched with {action = "GenerateOtp", controller = "Otp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateOtp(System.String) on controller Patient.Api.Controllers.V1.OtpController (Patient.Api).
+2024-08-06 15:32:26.375 +06:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-08-06 15:32:26.402 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api) in 6714.4699ms
+2024-08-06 15:32:26.403 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:32:26.403 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/generate - 200 null application/json; charset=utf-8 6816.266ms
+2024-08-06 15:33:12.901 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/Otp/generate - application/json 13
+2024-08-06 15:33:12.927 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 15:33:12.929 +06:00  INF  CORS policy execution successful.
+2024-08-06 15:33:12.930 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:33:12.930 +06:00  INF  Route matched with {action = "GenerateOtp", controller = "Otp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateOtp(System.String) on controller Patient.Api.Controllers.V1.OtpController (Patient.Api).
+2024-08-06 15:33:50.894 +06:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-08-06 15:33:50.895 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api) in 37964.313ms
+2024-08-06 15:33:50.895 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.GenerateOtp (Patient.Api)'
+2024-08-06 15:33:50.896 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/generate - 200 null application/json; charset=utf-8 37995.2271ms
+2024-08-06 15:34:34.038 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/Otp/verify - application/json 45
+2024-08-06 15:34:34.050 +06:00  INF  No CORS policy found for the specified request.
+2024-08-06 15:34:34.053 +06:00  INF  CORS policy execution successful.
+2024-08-06 15:34:34.054 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.OtpController.VerifyOtp (Patient.Api)'
+2024-08-06 15:34:34.059 +06:00  INF  Route matched with {action = "VerifyOtp", controller = "Otp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult VerifyOtp(Patient.Application.Models.OtpVerificationRequest) on controller Patient.Api.Controllers.V1.OtpController (Patient.Api).
+2024-08-06 15:35:00.796 +06:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-08-06 15:35:00.798 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.VerifyOtp (Patient.Api) in 26739.1758ms
+2024-08-06 15:35:00.798 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.VerifyOtp (Patient.Api)'
+2024-08-06 15:35:00.799 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/verify - 200 null application/json; charset=utf-8 26760.468ms
