@@ -1,4 +1,6 @@
-﻿namespace Patient.Application.Features.Users.Services;
+﻿using Patient.Domain.Enums;
+
+namespace Patient.Application.Features.Users.Services;
 
 public class UserService : BaseService, IUserService
 {
@@ -80,13 +82,8 @@ public class UserService : BaseService, IUserService
 
     public async Task<bool> IsActiveAsync(Guid id)
     {
-        var status = await _userRepo.IsActiveAsync(id);
-        if (status == 1) 
-        {
-            return true;
-        }
-
-        return false;
+        UserStatus status = await _userRepo.IsActiveAsync(id);        
+        return status == UserStatus.Active ? true : false;
     }
 
     public async Task<UserForListDto> GetUserAsync(string loginId, string password)

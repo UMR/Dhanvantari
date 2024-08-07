@@ -55,9 +55,14 @@ public class UserRepository : IUserRepository
         return result;
     }
 
-    public async Task<byte> IsActiveAsync(Guid id)
+    public async Task<UserStatus> IsActiveAsync(Guid id)
     {
-        var user = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
-        return user != null ? user.Status : (Byte)0;
+        var status = await _context.Users
+                           .AsNoTracking()
+                           .Where(u => u.Id == id)
+                           .Select(u => u.Status)
+                           .FirstOrDefaultAsync();
+        
+        return (UserStatus)status;
     }
 }

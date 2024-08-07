@@ -1,4 +1,6 @@
-﻿namespace Patient.Application.Contracts.Persistence;
+﻿using Patient.Domain.Enums;
+
+namespace Patient.Application.Contracts.Persistence;
 
 public interface IUserRepository
 {
@@ -16,6 +18,6 @@ public interface IUserRepository
 
     Task<bool> IsExistAsync(string loginId);
 
-    Task<byte> IsActiveAsync(Guid id);    
+    Task<UserStatus> IsActiveAsync(Guid id);    
 
 }
