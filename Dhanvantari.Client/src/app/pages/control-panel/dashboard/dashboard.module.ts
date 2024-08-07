@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import 'jquery';
 import * as $ from 'jquery';
 import { DashboardComponent } from './dashboard.component';
-import { DashbardControlPanelComponent } from './control-panel/dashboard-control-panel.component';
+import { DashbardControlPanelComponent } from './dashboard-control-panel/dashboard-control-panel.component';
 import { DashboardRoutingModule } from './dashboard.routing.module';
 
 // import { NgChartsModule  } from 'ng2-charts/ng2-charts';

@@ -11,7 +11,7 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('../../pages/dashboard.module').then(
+          import('../../pages/control-panel/dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
         // canActivate: [AuthGuard],
@@ -19,7 +19,7 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () =>
-          import('../../pages/dashboard.module').then(
+          import('../../pages/control-panel/dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
         // canActivate: [AuthGuard],
