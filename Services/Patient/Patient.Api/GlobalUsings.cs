@@ -15,3 +15,5 @@ global using Patient.Api.Services;
 global using Patient.Infrastructure.Otp;
 global using Patient.Application.Exceptions;
 global using Patient.Api.Filters;
+global using Patient.Api.Extensions;
+global using Patient.Api.Constants;
