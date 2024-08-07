@@ -1,11 +1,11 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
-  selector: 'admin-layout',
-  templateUrl: './admin-layout.component.html',
-  styleUrls: ['./admin-layout.component.css'],
+  selector: 'main-layout',
+  templateUrl: './main-layout.component.html',
+  styleUrls: ['./main-layout.component.css'],
 })
-export class AdminLayoutComponent implements OnInit {
+export class MainLayoutComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AdminLayoutRoutingModule } from './admin-layout.routing.module';
-import { AdminLayoutComponent } from './admin-layout.component';
+import { MainLayoutRoutingModule } from './main-layout.routing.module';
+import { MainLayoutComponent } from './main-layout.component';
 import { FooterModule } from '../../shared/components/footer/footer.module';
 import { HeaderModule } from '../../shared/components/header/header.module';
 import { MainSidebarModule } from '../../shared/components/main-sidebar/main-sidebar.module';
@@ -11,7 +11,7 @@ import { ControlSidebarBackGroundModule } from '../../shared/components/control-
 
 @NgModule({
   imports: [
-    AdminLayoutRoutingModule,
+    MainLayoutRoutingModule,
     HeaderModule, 
     FooterModule,
     MainSidebarModule,
@@ -19,7 +19,7 @@ import { ControlSidebarBackGroundModule } from '../../shared/components/control-
     ControlSidebarBackGroundModule,
     ContentHeaderModule,
   ],
-  declarations: [AdminLayoutComponent],
-  exports: [AdminLayoutComponent],
+  declarations: [MainLayoutComponent],
+  exports: [MainLayoutComponent],
 })
-export class AdminLayoutModule {}
+export class MainLayoutModule {}

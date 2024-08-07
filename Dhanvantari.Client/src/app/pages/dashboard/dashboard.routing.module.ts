@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { DashbardControlPanelComponent } from './dashboard-control-panel/dashboard-control-panel.component';
-import { AuthGuardService as AuthGuard } from '../../../core/services/guards/auth-guard.service';
+import { AuthGuardService as AuthGuard } from '../../core/services/guards/auth-guard.service';
 import { ChangePasswordComponent } from '../change-password/change-password.component';
 import { DemographicsComponent } from '../demographics/demographics.component';
 
