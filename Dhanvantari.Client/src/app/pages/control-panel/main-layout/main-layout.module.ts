@@ -1,0 +1,25 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MainLayoutRoutingModule } from './main-layout.routing.module';
+import { MainLayoutComponent } from './main-layout.component';
+import { FooterModule } from '../../../shared/components/footer/footer.module';
+import { HeaderModule } from '../../../shared/components/header/header.module';
+import { MainSidebarModule } from '../../../shared/components/main-sidebar/main-sidebar.module';
+import { ContentHeaderModule } from '../../../shared/components/content-header/content-header.module';
+import { ControlSidebarModule } from '../../../shared/components/control-sidebar/control-sidebar.module';
+import { ControlSidebarBackGroundModule } from '../../../shared/components/control-sidebar-bg/control-sidebar-bg.module';
+
+@NgModule({
+  imports: [
+    MainLayoutRoutingModule,
+    HeaderModule, 
+    FooterModule,
+    MainSidebarModule,
+    ControlSidebarModule,
+    ControlSidebarBackGroundModule,
+    ContentHeaderModule,
+  ],
+  declarations: [MainLayoutComponent],
+  exports: [MainLayoutComponent],
+})
+export class MainLayoutModule {}

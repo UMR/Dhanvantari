@@ -1,17 +1,18 @@
+/// <reference path="../dashboard/dashboard.module.ts" />
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdminLayoutComponent } from './admin-layout.component';
-import { AuthGuardService as AuthGuard } from '../../core/services/guards/auth-guard.service';
+import { MainLayoutComponent } from './main-layout.component';
+import { AuthGuardService as AuthGuard } from '../../../core/services/guards/auth-guard.service';
 
 const routes: Routes = [
   {
     path: '',
-    component: AdminLayoutComponent,
+    component: MainLayoutComponent,
     children: [
       {
         path: '',
         loadChildren: () =>
-          import('../../pages/control-panel/dashboard/dashboard.module').then(
+          import('../dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
         // canActivate: [AuthGuard],
@@ -19,7 +20,7 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () =>
-          import('../../pages/control-panel/dashboard/dashboard.module').then(
+          import('../dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
         // canActivate: [AuthGuard],
@@ -56,4 +57,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AdminLayoutRoutingModule {}
+export class MainLayoutRoutingModule {}

@@ -6,8 +6,8 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: () =>
-      import("./layout/admin/admin-layout.module").then(
-        (m) => m.AdminLayoutModule
+      import("./pages/control-panel/main-layout/main-layout.module").then(
+        (m) => m.MainLayoutModule
       ),
   },
   { path: "**", redirectTo: "" },
