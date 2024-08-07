@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import $ from 'jquery';
+import { UserService } from '../../../core/services/application/user.service';
 
 @Component({
   selector: 'dashboard-control-panel',
@@ -9,7 +10,7 @@ import $ from 'jquery';
 export class DashbardControlPanelComponent implements OnInit {
   public cards: any;
 
-  constructor() {}
+  constructor(private userService: UserService) {}
 
   ngOnInit() {
     this.bindCards();
@@ -20,9 +21,9 @@ export class DashbardControlPanelComponent implements OnInit {
   }
 
   bindCards() {
-    // this.appSettings
-    //   .getCustomerDetails()
-    //   .subscribe((cards) => (this.cards = cards));
+    this.userService
+       .getCustomerDetails()
+       .subscribe((cards) => (this.cards = cards));
   }
 
   onValueChange($event) {
