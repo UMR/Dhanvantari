@@ -1,17 +1,15 @@
-﻿using Patient.Domain.Enums;
-
-namespace Patient.Application.Features.Users.Services;
+﻿namespace Patient.Application.Features.Users.Services;
 
 public class UserService : BaseService, IUserService
 {
-    private readonly IUserRepository _userRepo;
+    private readonly IUserRepository _userRepository;
 
     public UserService(IMapper mapper,
         IServiceProvider serviceProvider,
         ICurrentUserService currentUserService,
-        IUserRepository userRepo) : base(mapper, serviceProvider, currentUserService)
+        IUserRepository userRepository) : base(mapper, serviceProvider, currentUserService)
     {
-        _userRepo = userRepo;
+        _userRepository = userRepository;
     }
 
     public async Task<BaseCommandResponse> CreateAsync(UserForCreateDto request)
@@ -39,7 +37,7 @@ public class UserService : BaseService, IUserService
             UpdatedDate = DateTime.Now            
         };
 
-        await _userRepo.CreateAsync(entity);
+        await _userRepository.CreateAsync(entity);
 
         response.Success = true;
         response.Message = "Creating Successful";
@@ -56,39 +54,52 @@ public class UserService : BaseService, IUserService
         throw new NotImplementedException();
     }
 
-    public Task<BaseCommandResponse> DeleteAsync(Guid guid)
+    public async Task<BaseCommandResponse> DeleteAsync(Guid guid)
     {
-        throw new NotImplementedException();
+        var response = new BaseCommandResponse();
+        var entity = await _userRepository.GetByIdAsync(guid);
+
+        if (entity == null)
+        {
+            throw new NotFoundException(nameof(User), guid);
+        }
+
+        await _userRepository.DeleteAsync(entity);
+
+        response.Success = true;
+        response.Message = "Deleting Successful";        
+
+        return response;
     }
 
     public async Task<List<UserForListDto>> GetAllAsync()
     {
-        var usersFromRepo = await _userRepo.GetAllAsync();
+        var usersFromRepo = await _userRepository.GetAllAsync();
         var usersToReturn = _mapper.Map<List<UserForListDto>>(usersFromRepo);
         return usersToReturn;
     }
 
     public async Task<UserForListDto> GetByIdAsync(Guid id)
     {
-        var userFromRepo = await _userRepo.GetByIdAsync(id);
+        var userFromRepo = await _userRepository.GetByIdAsync(id);
         var userToReturn = _mapper.Map<UserForListDto>(userFromRepo);
         return userToReturn;
     }
 
     public async Task<bool> IsExistAsync(string loginId) 
     {
-        return await _userRepo.IsExistAsync(loginId);
+        return await _userRepository.IsExistAsync(loginId);
     }
 
     public async Task<bool> IsActiveAsync(Guid id)
     {
-        UserStatus status = await _userRepo.IsActiveAsync(id);        
+        UserStatus status = await _userRepository.IsActiveAsync(id);        
         return status == UserStatus.Active ? true : false;
     }
 
     public async Task<UserForListDto> GetUserAsync(string loginId, string password)
     {
-        var userFromRepo = await _userRepo.GetAsync(loginId, password);
+        var userFromRepo = await _userRepository.GetAsync(loginId, password);
         var userToReturn = _mapper.Map<UserForListDto>(userFromRepo);
         return userToReturn;
     }

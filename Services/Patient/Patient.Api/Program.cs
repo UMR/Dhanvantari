@@ -9,6 +9,7 @@ builder.AddPersistenceServices();
 
 builder.Services.AddControllers(config =>
 {
+    config.Filters.Add<ApiExceptionFilterAttribute>();
     config.Filters.Add(new AuthorizeFilter(new AuthorizationPolicyBuilder().
         RequireAuthenticatedUser().
         RequireClaim(builder.Configuration["IdentityServer:ClaimType"], builder.Configuration["IdentityServer:ClaimValue"]).Build()));

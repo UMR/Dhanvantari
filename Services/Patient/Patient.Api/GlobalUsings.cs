@@ -2,6 +2,7 @@
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Mvc.Authorization;
 global using Newtonsoft.Json;
+global using Microsoft.AspNetCore.Mvc.Filters; 
 
 global using Patient.Application.Extensions;
 global using Patient.Infrastructure.Extensions;
@@ -12,3 +13,5 @@ global using Patient.Application.Models;
 global using Patient.Application.Contracts.Services;
 global using Patient.Api.Services;
 global using Patient.Infrastructure.Otp;
+global using Patient.Application.Exceptions;
+global using Patient.Api.Filters;

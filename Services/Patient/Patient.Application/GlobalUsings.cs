@@ -22,3 +22,5 @@ global using Patient.Persistence;
 global using Patient.Application.Wrapper;
 global using Patient.Application.Contracts.Persistence;
 global using Patient.Application.Contracts.Services;
+global using Patient.Application.Exceptions;
+global using Patient.Domain.Enums;
