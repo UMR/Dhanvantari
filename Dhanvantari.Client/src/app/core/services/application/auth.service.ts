@@ -11,6 +11,18 @@ export class AuthService {
   ) {}
 
   public login(username: string, password: string) {
+    var jsonData = [
+      {
+        "firstName": "Sohel",
+        "id": 1,
+        "lastName": "Sohel",
+        "status": "Active",
+        "team": "Root",
+        "token": "fake-jwt-token",
+        "username": "intelchiprules@yahoo.co.in"
+      }
+    ]
+    
     return this.http
       .post<any>(`/users/authenticate`, {
         username: username,
@@ -21,7 +33,8 @@ export class AuthService {
           if (user && user.token) {
             this.localStorage.setItem('userSession', JSON.stringify(user));
           }
-          return user;
+          //return user;
+          this.localStorage.setItem('userSession', JSON.stringify(jsonData));
         })
       );
   }

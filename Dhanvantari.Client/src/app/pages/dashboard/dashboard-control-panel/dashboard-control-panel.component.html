@@ -6,6 +6,34 @@
 					<h3 class="box-title">User List</h3>
 				</div>
 				<div class="box-body">
+
+					<div class="row card-group">
+						<div class="col-sm-4" *ngFor="let card of cards;">
+							<div class="card" style="width: 14rem; margin:10px; ">
+								<div>
+									<img class="card-img-top" style="height:140px; width:200px" src="https://creditkarmacdn-a.akamaihd.net/res/content/reviews/CCCitiBank1317/small.jpg"
+											 alt="Card image cap" />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">
+										{{card.title}}
+									</h5>
+									<p class="card-text">
+										<b>Id</b> {{card.id}}
+									</p>
+									<p class="card-text">
+										<b>User Id</b>	: {{card.userId}}
+									</p>
+									<p class="card-text">
+										{{card.body}}
+									</p>
+									<p class="card-text">
+										<input type="button" value="{{card.id}}" (click)="onClick(card.id)" />
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<!-- <app-card-details [cards]="cards" (valueChange)="onValueChange($event)"></app-card-details> -->
 				</div>
 			</div>

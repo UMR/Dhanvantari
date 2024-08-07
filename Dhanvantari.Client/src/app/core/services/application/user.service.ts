@@ -1,11 +1,4 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  Output,
-  EventEmitter,
-  ViewEncapsulation,
-} from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -27,7 +20,7 @@ export class UserService {
   users: any | User[];
   // private usersInOption: NgOption[];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getAll() {
     return this.http.get<User[]>(`/users`);
@@ -92,5 +85,9 @@ export class UserService {
     }
     pagedData.page = page;
     return pagedData;
+  }
+
+  public getCustomerDetails(): Observable<any> {
+    return this.http.get('https://jsonplaceholder.typicode.com/posts');
   }
 }
