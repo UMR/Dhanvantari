@@ -17,3 +17,4 @@ global using Patient.Application.Exceptions;
 global using Patient.Api.Filters;
 global using Patient.Api.Extensions;
 global using Patient.Api.Constants;
+global using Patient.Persistence.Data;

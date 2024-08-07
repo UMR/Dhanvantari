@@ -8,6 +8,8 @@ builder.AddApiServices();
 
 var app = builder.Build();
 
+SeedData.PopulateDb(app);
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
