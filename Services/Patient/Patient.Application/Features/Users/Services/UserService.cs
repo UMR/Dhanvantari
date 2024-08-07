@@ -73,6 +73,11 @@ public class UserService : BaseService, IUserService
         return userToReturn;
     }
 
+    public async Task<bool> IsExistAsync(string loginId) 
+    {
+        return await _userRepo.IsExistAsync(loginId);
+    }
+
     public async Task<bool> IsActiveAsync(Guid id)
     {
         var status = await _userRepo.IsActiveAsync(id);

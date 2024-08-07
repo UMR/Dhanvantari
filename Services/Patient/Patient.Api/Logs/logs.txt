@@ -1147,3 +1147,103 @@ WHERE [u].[Id] = @__id_0
 2024-08-06 15:35:00.798 +06:00  INF  Executed action Patient.Api.Controllers.V1.OtpController.VerifyOtp (Patient.Api) in 26739.1758ms
 2024-08-06 15:35:00.798 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.OtpController.VerifyOtp (Patient.Api)'
 2024-08-06 15:35:00.799 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/Otp/verify - 200 null application/json; charset=utf-8 26760.468ms
+2024-08-07 15:00:32.042 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-07 15:00:32.157 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-07 15:00:32.191 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-07 15:00:32.191 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-07 15:00:32.712 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 15:00:33.391 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-07 15:00:33.391 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 15:00:33.391 +06:00  INF  Hosting environment: Development
+2024-08-07 15:00:33.392 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-07 15:00:33.878 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-07 15:00:34.364 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 488.0696ms
+2024-08-07 15:00:34.377 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.css - null null
+2024-08-07 15:00:34.379 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 15:00:34.379 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-07 15:00:34.381 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.27ms
+2024-08-07 15:00:34.381 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 2.2669ms
+2024-08-07 15:00:34.386 +06:00  INF  The file /index.css was not modified
+2024-08-07 15:00:34.387 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.css - 304 null text/css 9.4982ms
+2024-08-07 15:00:34.441 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-07 15:00:34.537 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.2046ms
+2024-08-07 15:00:34.737 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-07 15:00:34.961 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.3791ms
+2024-08-07 15:00:39.972 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-07 15:00:39.977 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 4.1822ms
+2024-08-07 15:00:39.997 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-07 15:00:39.998 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 15:00:39.998 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 0.6016ms
+2024-08-07 15:00:39.998 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.285ms
+2024-08-07 15:00:40.022 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-07 15:00:40.035 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.9411ms
+2024-08-07 15:00:40.184 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-07 15:00:40.193 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.9394ms
+2024-08-07 15:01:00.835 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/api/v1/Auth/IsExist/kaptan.cse@gmaul.com - null null
+2024-08-07 15:01:00.875 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api)'
+2024-08-07 15:01:00.910 +06:00  INF  Route matched with {action = "IsExist", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsExistAsync(System.String) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-07 15:01:04.170 +06:00  INF  Executed DbCommand (278ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-08-07 15:01:04.215 +06:00  INF  Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-07 15:01:04.231 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api) in 3317.7625ms
+2024-08-07 15:01:04.231 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api)'
+2024-08-07 15:01:04.238 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/api/v1/Auth/IsExist/kaptan.cse@gmaul.com - 200 null application/json; charset=utf-8 3403.5926ms
+2024-08-07 15:01:28.083 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-07 15:01:28.115 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-07 15:01:28.127 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-07 15:01:28.127 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-07 15:01:28.315 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-07 15:01:28.513 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-07 15:01:28.513 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-07 15:01:28.513 +06:00  INF  Hosting environment: Development
+2024-08-07 15:01:28.514 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-07 15:01:29.295 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-07 15:01:29.669 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 381.5765ms
+2024-08-07 15:01:29.673 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-07 15:01:29.673 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-07 15:01:29.677 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.8899ms
+2024-08-07 15:01:29.677 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 3.9375ms
+2024-08-07 15:01:29.723 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-07 15:01:29.769 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.1786ms
+2024-08-07 15:01:29.982 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-07 15:01:30.212 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 230.3712ms
+2024-08-07 15:01:59.039 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/api/v1/Auth/IsExist/01721525318 - null null
+2024-08-07 15:01:59.098 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api)'
+2024-08-07 15:01:59.123 +06:00  INF  Route matched with {action = "IsExist", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsExistAsync(System.String) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-07 15:01:59.560 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api) - Validation state: "Valid"
+2024-08-07 15:02:00.999 +06:00  INF  Executed DbCommand (52ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-08-07 15:02:01.035 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1468.4907ms.
+2024-08-07 15:02:01.042 +06:00  INF  Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-07 15:02:01.059 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api) in 1933.0727ms
+2024-08-07 15:02:01.060 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api)'
+2024-08-07 15:02:01.072 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/api/v1/Auth/IsExist/01721525318 - 200 null application/json; charset=utf-8 2033.3834ms
+2024-08-07 15:02:06.340 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/api/v1/Auth/IsExist/01721525318 - null null
+2024-08-07 15:02:06.359 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api)'
+2024-08-07 15:02:06.361 +06:00  INF  Route matched with {action = "IsExist", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsExistAsync(System.String) on controller Patient.Api.Controllers.V1.AuthController (Patient.Api).
+2024-08-07 15:02:06.401 +06:00  INF  Executing action method Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api) - Validation state: "Valid"
+2024-08-07 15:02:25.925 +06:00  INF  Executed DbCommand (44ms) [Parameters=[@__ToUpper_0='?' (Size = 100), @__Trim_1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE UPPER([u].[Email]) = @__ToUpper_0 OR [u].[Mobile] = @__Trim_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-08-07 15:02:34.607 +06:00  INF  Executed action method Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28205.1938ms.
+2024-08-07 15:02:34.608 +06:00  INF  Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-08-07 15:02:34.608 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api) in 28247.3581ms
+2024-08-07 15:02:34.608 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.IsExistAsync (Patient.Api)'
+2024-08-07 15:02:34.609 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/api/v1/Auth/IsExist/01721525318 - 200 null application/json; charset=utf-8 28269.1832ms

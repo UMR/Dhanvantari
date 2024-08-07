@@ -38,7 +38,7 @@ public class UserRepository : IUserRepository
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
         return user;
-    }
+    }    
 
     public async Task<User> GetAsync(string loginId, string password)
     {
@@ -50,8 +50,8 @@ public class UserRepository : IUserRepository
 
     public async Task<bool> IsExistAsync(string loginId)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email.ToUpper() == loginId.Trim().ToUpper() || u.Mobile == loginId.Trim());
-        return user != null ? true : false;
+        var result = await _context.Users.AnyAsync(u => u.Email.ToUpper() == loginId.Trim().ToUpper() || u.Mobile == loginId.Trim());
+        return result;
     }
 
     public async Task<byte> IsActiveAsync(Guid id)

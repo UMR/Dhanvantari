@@ -12,7 +12,9 @@ public interface IUserService
 
     Task<UserForListDto> GetUserAsync(string loginId, string password);
 
-    Task<UserForListDto> GetByIdAsync(Guid id);    
+    Task<UserForListDto> GetByIdAsync(Guid id);
+
+    Task<bool> IsExistAsync(string loginId);
 
     Task<bool> IsActiveAsync(Guid id);
 

@@ -15,14 +15,14 @@ public class AuthController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("Register")]
-    public async Task<IActionResult> Register(UserForCreateDto request)
+    public async Task<IActionResult> RegisterAsync(UserForCreateDto request)
     {
         return Ok(await _userService.CreateAsync(request));
     }
 
     [AllowAnonymous]
     [HttpPost("Token")]
-    public async Task<IActionResult> GetToken(TokenRequest request)
+    public async Task<IActionResult> GetTokenAsync(TokenRequest request)
     {
         var tokenResponse = await _authService.GetToken(request.Username, request.Password);
 
@@ -38,7 +38,7 @@ public class AuthController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("RefreshToken")]
-    public async Task<IActionResult> GetRefreshTokenByToken(RefreshTokenRequest request)
+    public async Task<IActionResult> GetRefreshTokenByTokenAsync(RefreshTokenRequest request)
     {
         var tokenResponse = await _authService.GetRefreshTokenByToken(request.RefreshToken);
 
@@ -50,5 +50,12 @@ public class AuthController : ControllerBase
         {
             return Ok(tokenResponse);
         }
+    }
+
+    [AllowAnonymous]
+    [HttpGet("IsExist/{loginId}")]
+    public async Task<IActionResult> IsExistAsync(string loginId)
+    {
+        return Ok(await _userService.IsExistAsync(loginId));
     }
 }
