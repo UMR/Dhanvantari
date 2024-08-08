@@ -27,8 +27,7 @@ public class UserService : BaseService, IUserService
         }        
 
         Guid id = Guid.NewGuid();
-
-        var entity = new User
+        var user = new User
         {    
             Id = id,
             FirstName = request.FirstName,
@@ -40,16 +39,48 @@ public class UserService : BaseService, IUserService
             CreatedBy = id
         };
 
-        await _userRepository.CreateAsync(entity);
+        await _userRepository.CreateAsync(user);
 
         response.Success = true;
         response.Message = "Creating Successful";
         return response;
     }
 
-    public Task<BaseCommandResponse> UpdateAsync(Guid guid, UserForUpdateDto request)
+    public async Task<BaseCommandResponse> UpdateAsync(Guid id, UserForUpdateDto request)
     {
-        throw new NotImplementedException();
+        var response = new BaseCommandResponse();
+        var validator = new UserForUpdateDtoValidator(_serviceProvider);
+        var validationResult = await validator.ValidateAsync(request);
+
+        if (validationResult.IsValid == false)
+        {
+            response.Success = false;
+            response.Message = "Creating Failed";
+            response.Errors = validationResult.Errors.Select(e => e.ErrorMessage).ToArray();
+            return response;
+        }
+
+        var user = await _userRepository.GetByIdAsync(id);
+        if (user is null)
+        {
+            throw new NotFoundException(nameof(User), id.ToString());
+        }
+       
+        user.Id = id;
+        user.FirstName = request.FirstName;
+        user.LastName = request.LastName;
+        user.Email = request.Email;
+        user.Mobile = request.Mobile;
+        user.DateOfBirth = request.DateOfBirth;
+        user.UpdatedBy = id;
+        user.UpdatedDate = DateTime.Now;
+
+        await _userRepository.UpdateAsync(user);
+
+        response.Success = true;
+        response.Message = "Updating Successful";        
+
+        return response;
     }
 
     public Task<BaseCommandResponse> UpdateStatusAsync(Guid guid)

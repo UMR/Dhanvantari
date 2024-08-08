@@ -12,7 +12,14 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpGet("IsDuplicateUser/{loginId}")]
+    [HttpPost("UpdateBasic/{id}")]
+    public async Task<IActionResult> UpdateBasicAsync(Guid id, UserForUpdateDto request)
+    {
+        return Ok(await _userService.UpdateAsync(id, request));
+    }
+
+    [AllowAnonymous]
+    [HttpGet("IsDuplicate/{loginId}")]
     public async Task<IActionResult> IsDuplicateUserAsync(string loginId)
     {
         return Ok(await _userService.IsExistAsync(loginId));

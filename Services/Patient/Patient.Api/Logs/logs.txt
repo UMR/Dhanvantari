@@ -1360,3 +1360,112 @@ WHERE [u].[Id] = @__id_0
 2024-08-07 19:34:52.370 +06:00  INF  Executed action Patient.Api.Controllers.V1.AuthController.GetTokenAsync (Patient.Api) in 14800.4731ms
 2024-08-07 19:34:52.371 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.AuthController.GetTokenAsync (Patient.Api)'
 2024-08-07 19:34:52.371 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/Auth/Token - 200 null application/json; charset=utf-8 14871.7838ms
+2024-08-08 19:42:23.734 +06:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-08 19:42:24.087 +06:00  INF  Executed DbCommand (318ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2024-08-08 19:42:24.486 +06:00  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-08-08 19:42:24.517 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-08 19:42:24.566 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-08 19:42:24.581 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-08 19:42:24.581 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-08 19:42:24.779 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:42:25.086 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-08 19:42:25.087 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-08 19:42:25.087 +06:00  INF  Hosting environment: Development
+2024-08-08 19:42:25.087 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-08 19:42:25.710 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-08 19:42:27.297 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 1604.1284ms
+2024-08-08 19:42:27.311 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-08 19:42:27.311 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:42:27.317 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 6.5934ms
+2024-08-08 19:42:27.317 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.5284ms
+2024-08-08 19:42:27.389 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-08 19:42:27.476 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.5504ms
+2024-08-08 19:42:27.784 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-08 19:42:28.092 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 308.7444ms
+2024-08-08 19:45:43.887 +06:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-08 19:45:43.962 +06:00  INF  Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2024-08-08 19:45:44.159 +06:00  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-08-08 19:45:44.176 +06:00  INF  Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2024-08-08 19:45:44.195 +06:00  INF  You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2024-08-08 19:45:44.209 +06:00  INF  Using the default authentication scheme Bearer for IdentityServer
+2024-08-08 19:45:44.209 +06:00  INF  Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). If you support interactive logins via the browser, then a cookie-based scheme should be used.
+2024-08-08 19:45:44.398 +06:00  INF  User profile is available. Using 'C:\Users\Atikur Zaman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:45:44.581 +06:00  INF  Now listening on: http://localhost:8001
+2024-08-08 19:45:44.581 +06:00  INF  Application started. Press Ctrl+C to shut down.
+2024-08-08 19:45:44.581 +06:00  INF  Hosting environment: Development
+2024-08-08 19:45:44.581 +06:00  INF  Content root path: D:\UMR GIT\Dhanvantari\Services\Patient\Patient.Api
+2024-08-08 19:45:45.342 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - null null
+2024-08-08 19:45:45.893 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - 200 null text/html;charset=utf-8 561.7713ms
+2024-08-08 19:45:45.898 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:45:45.898 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.js - null null
+2024-08-08 19:45:45.904 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.7048ms
+2024-08-08 19:45:45.904 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.js - 200 null application/javascript;charset=utf-8 6.0021ms
+2024-08-08 19:45:45.958 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/_vs/browserLink - null null
+2024-08-08 19:45:46.006 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.2132ms
+2024-08-08 19:45:46.573 +06:00  INF  Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - null null
+2024-08-08 19:45:46.748 +06:00  INF  Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 174.5668ms
+2024-08-08 19:47:00.319 +06:00  INF  Request starting HTTP/1.1 POST http://localhost:8001/api/v1/User/UpdateBasic/3DC60C5F-54F9-418E-B24F-632F7C1C5B8A - application/json 200
+2024-08-08 19:47:00.735 +06:00  INF  No CORS policy found for the specified request.
+2024-08-08 19:47:00.753 +06:00  INF  CORS policy execution successful.
+2024-08-08 19:47:00.757 +06:00  INF  Executing endpoint 'Patient.Api.Controllers.V1.UserController.UpdateBasicAsync (Patient.Api)'
+2024-08-08 19:47:00.793 +06:00  INF  Route matched with {action = "UpdateBasic", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateBasicAsync(System.Guid, Patient.Application.Features.UserForUpdateDto) on controller Patient.Api.Controllers.V1.UserController (Patient.Api).
+2024-08-08 19:47:01.117 +06:00  INF  Executing action method Patient.Api.Controllers.V1.UserController.UpdateBasicAsync (Patient.Api) - Validation state: "Valid"
+2024-08-08 19:47:06.474 +06:00  INF  Executed DbCommand (148ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedBy], [u].[CreatedDate], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Mobile], [u].[Pin], [u].[Status], [u].[UpdatedBy], [u].[UpdatedDate]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__id_0
+2024-08-08 19:47:26.966 +06:00  INF  Executed DbCommand (39ms) [Parameters=[@p11='?' (DbType = Guid), @p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 100), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (Size = 20), @p7='?' (Size = 50), @p8='?' (Size = 1) (DbType = Byte), @p9='?' (DbType = Guid), @p10='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [User] SET [CreatedBy] = @p0, [CreatedDate] = @p1, [DateOfBirth] = @p2, [Email] = @p3, [FirstName] = @p4, [LastName] = @p5, [Mobile] = @p6, [Pin] = @p7, [Status] = @p8, [UpdatedBy] = @p9, [UpdatedDate] = @p10
+OUTPUT 1
+WHERE [Id] = @p11;
+2024-08-08 19:47:31.915 +06:00  INF  Executed action method Patient.Api.Controllers.V1.UserController.UpdateBasicAsync (Patient.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30792.7434ms.
+2024-08-08 19:47:31.927 +06:00  INF  Executing OkObjectResult, writing value of type 'Patient.Application.Wrapper.BaseCommandResponse'.
+2024-08-08 19:47:31.951 +06:00  INF  Executed action Patient.Api.Controllers.V1.UserController.UpdateBasicAsync (Patient.Api) in 31153.1906ms
+2024-08-08 19:47:31.951 +06:00  INF  Executed endpoint 'Patient.Api.Controllers.V1.UserController.UpdateBasicAsync (Patient.Api)'
+2024-08-08 19:47:31.958 +06:00  INF  Request finished HTTP/1.1 POST http://localhost:8001/api/v1/User/UpdateBasic/3DC60C5F-54F9-418E-B24F-632F7C1C5B8A - 200 null application/json; charset=utf-8 31639.42ms
