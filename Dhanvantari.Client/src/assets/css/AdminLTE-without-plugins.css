@@ -137,14 +137,15 @@
    transition: none;
  }
  /* Content */
- .content {
-   min-height: 250px;
-   padding: 15px;
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
- }
+.content {
+  min-height: 84vh;
+  max-height: 100% !important;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
  /* H1 - H6 font */
  h1,
  h2,
@@ -4002,4 +4003,3 @@
      white-space: normal !important;
    }
  }
- 
