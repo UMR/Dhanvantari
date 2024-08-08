@@ -50,12 +50,5 @@ public class AuthController : ControllerBase
         {
             return Ok(tokenResponse);
         }
-    }
-
-    [AllowAnonymous]
-    [HttpGet("IsExist/{loginId}")]
-    public async Task<IActionResult> IsExistAsync(string loginId)
-    {
-        return Ok(await _userService.IsExistAsync(loginId));
-    }
+    }    
 }

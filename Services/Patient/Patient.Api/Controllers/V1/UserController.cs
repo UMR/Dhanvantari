@@ -12,17 +12,10 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("generate")]
-    public IActionResult GenerateOtp([FromBody] string key)
+    [HttpGet("IsDuplicateUser/{loginId}")]
+    public async Task<IActionResult> IsDuplicateUserAsync(string loginId)
     {
-        return Ok();
-    }
-
-    [AllowAnonymous]
-    [HttpPost("verify")]
-    public IActionResult VerifyOtp([FromBody] OtpVerificationRequest request)
-    {
-        return Ok();
+        return Ok(await _userService.IsExistAsync(loginId));
     }
 }
 
