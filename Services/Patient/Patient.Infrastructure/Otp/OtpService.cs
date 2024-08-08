@@ -11,10 +11,10 @@ public class OtpService : IOtpService
         _random = new Random();
     }
 
-    public string GenerateOtp(string key)
+    public BaseQueryResponse<String> GenerateOtp(string key)
     {
         string otp = _random.Next(100000, 999999).ToString();
-        
+
         var cacheOptions = new MemoryCacheEntryOptions
         {
             AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
@@ -22,20 +22,20 @@ public class OtpService : IOtpService
 
         _cache.Set(key, otp, cacheOptions);
 
-        return otp;
+        return new BaseQueryResponse<String>(otp, true);
     }
 
-    public bool VerifyOtp(string key, string otp)
+    public BaseQueryResponse<String> VerifyOtp(string key, string otp)
     {
         if (_cache.TryGetValue(key, out string cachedOtp))
         {
             if (cachedOtp == otp)
             {
-                _cache.Remove(key); 
-                return true;
+                _cache.Remove(key);
+                return new BaseQueryResponse<String>("OTP is valid", true);
             }
         }
 
-        return false;
+        return new BaseQueryResponse<String>("OTP is invalid");
     }
 }

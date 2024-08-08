@@ -2,7 +2,7 @@
 
 public interface IOtpService
 {
-    string GenerateOtp(string key);
+    BaseQueryResponse<String> GenerateOtp(string key);
 
-    bool VerifyOtp(string key, string otp);
+    BaseQueryResponse<String> VerifyOtp(string key, string otp);
 }

@@ -18,3 +18,4 @@ global using Patient.Infrastructure.Identity;
 global using Patient.Application.Contracts.Infrastructure;
 global using Patient.Application.Features;
 global using Patient.Infrastructure.Otp;
+global using Patient.Application.Wrapper;

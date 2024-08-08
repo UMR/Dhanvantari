@@ -14,21 +14,15 @@ public class OtpController : ControllerBase
     [AllowAnonymous]
     [HttpPost("generate")]
     public IActionResult GenerateOtp([FromBody] string key)
-    {
-        string otp = _otpService.GenerateOtp(key);        
-        return Ok(new { Otp = otp });
+    {              
+        return Ok(_otpService.GenerateOtp(key));
     }
 
     [AllowAnonymous]
     [HttpPost("verify")]
     public IActionResult VerifyOtp([FromBody] OtpVerificationRequest request)
     {
-        bool isValid = _otpService.VerifyOtp(request.Key, request.Otp);
-        if (isValid)
-        {
-            return Ok(new { Message = "OTP is valid" });
-        }
-        return BadRequest(new { Message = "Invalid OTP" });
+        return Ok(_otpService.VerifyOtp(request.Key, request.Otp));        
     }
 }
 
