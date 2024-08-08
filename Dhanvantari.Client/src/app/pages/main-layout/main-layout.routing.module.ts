@@ -28,7 +28,7 @@ const routes: Routes = [
           import('../dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
-        // canActivate: [AuthGuard],
+        canActivate: [AuthGuard],
         data: {
           breadcrumb: 'Dashboard',
           breadcrumbs: 'Dashboard',
@@ -39,7 +39,6 @@ const routes: Routes = [
           show: false,
         },
       },
-
     ],
   },
   {
@@ -73,4 +72,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class MainLayoutRoutingModule {}
+export class MainLayoutRoutingModule { }

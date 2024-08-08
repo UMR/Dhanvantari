@@ -2,7 +2,7 @@
   <section class="sidebar">
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
-     
+
       <li class="treeview" [routerLinkActive]="'active'">
         <a style="cursor:pointer" [routerLink]="'/dashboard'">
           <i class="fa fa-dashboard"></i>
@@ -13,6 +13,18 @@
         <a style="cursor:pointer" [routerLink]="'/demographics'">
           <i class="fa fa-gears"></i>
           <span>Demographics</span>
+        </a>
+      </li>
+      <li class="treeview" [routerLinkActive]="'active'">
+        <a style="cursor:pointer" [routerLink]="'/document-upload'">
+          <i class="fa fa-gears"></i>
+          <span>Document Upload</span>
+        </a>
+      </li>
+      <li class="treeview" [routerLinkActive]="'active'">
+        <a style="cursor:pointer" [routerLink]="'/pay-now'">
+          <i class="fa fa-gears"></i>
+          <span>Pay Now</span>
         </a>
       </li>
       <li class="treeview" [routerLinkActive]="'active'">

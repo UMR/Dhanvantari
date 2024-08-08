@@ -9,6 +9,8 @@ import { ContentHeaderModule } from '../../shared/components/content-header/cont
 import { ControlSidebarModule } from '../../shared/components/control-sidebar/control-sidebar.module';
 import { ControlSidebarBackGroundModule } from '../../shared/components/control-sidebar-bg/control-sidebar-bg.module';
 import { FormsModule } from '@angular/forms';
+import { UploadDocumentComponent } from '../upload-document/upload-document.component';
+import { PayNowComponent } from '../pay-now/pay-now.component';
 
 @NgModule({
   imports: [
