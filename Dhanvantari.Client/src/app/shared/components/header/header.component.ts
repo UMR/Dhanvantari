@@ -18,13 +18,17 @@ export class HeaderComponent implements OnInit {
   public messages: any[];
   public notifications: Notification[];
 
+  public showProfile: boolean = false;
+  public showNotification: boolean = false;
+  public showMessage: boolean = false;
+
   constructor(
     private router: Router,
     private authService: AuthService,
     private messageService: MessageService,
     private localStorage: LocalStorageService,
     private notificationService: NotificationService,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.bindUserDetails();
@@ -32,6 +36,46 @@ export class HeaderComponent implements OnInit {
     this.bindNotificationMenu();
     this.bindTaskMenu();
   }
+
+  profileClick() {
+    if (this.showProfile) {
+      this.showProfile = false;
+      this.showMessage = false;
+      this.showNotification = false;
+    }
+    else {
+      this.showProfile = true;
+      this.showMessage = false;
+      this.showNotification = false;
+    }
+  }
+
+  noficationClick() {
+    if (this.showNotification) {
+      this.showNotification = false;
+      this.showProfile = false;
+      this.showMessage = false;
+    }
+    else {
+      this.showNotification = true;
+      this.showProfile = false;
+      this.showMessage = false;
+    }
+  }
+
+  messageClick() {
+    if (this.showMessage) {
+      this.showNotification = false;
+      this.showProfile = false;
+      this.showMessage = false;
+    }
+    else {
+      this.showNotification = false;
+      this.showProfile = false;
+      this.showMessage = true;
+    }
+  }
+
   bindUserDetails() {
     this.user = JSON.parse(this.localStorage.getItem('userSession'));
     console.log(this.user);
@@ -48,7 +92,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onSignOut() {
-   
+
     this.localStorage.removeItem('userSession');
     this.localStorage.removeItem('users');
     this.localStorage.removeItem('currentUser');

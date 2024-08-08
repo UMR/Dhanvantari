@@ -1,4 +1,12 @@
 a.disabled {
-   /* pointer-events: none; */
-   cursor: not-allowed; 
+  /* pointer-events: none; */
+  cursor: not-allowed;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayShow {
+  display: block;
 }
