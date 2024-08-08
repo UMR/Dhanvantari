@@ -34,12 +34,8 @@ public partial class DhanvantariDbContext : DbContext
                 .HasColumnType("datetime");
             entity.Property(e => e.DateOfBirth).HasColumnType("datetime");
             entity.Property(e => e.Email).HasMaxLength(100);
-            entity.Property(e => e.FirstName)
-                .IsRequired()
-                .HasMaxLength(50);
-            entity.Property(e => e.LastName)
-                .IsRequired()
-                .HasMaxLength(50);
+            entity.Property(e => e.FirstName).HasMaxLength(50);
+            entity.Property(e => e.LastName).HasMaxLength(50);
             entity.Property(e => e.Mobile).HasMaxLength(20);
             entity.Property(e => e.Password)
                 .IsRequired()
