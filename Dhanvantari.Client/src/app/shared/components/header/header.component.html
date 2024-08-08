@@ -38,12 +38,12 @@
               <li class="footer"><a  [routerLink]="'/mail/inbox'">See All Messages</a></li>
             </ul>
           </li>
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <li class="dropdown notifications-menu"  data-target="#notification" data-toggle="collapse">
+            <a href="javascript:void(0)" class="dropdown-toggle">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning"> {{notifications.length }} </span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" id="notification">
               <li class="header">You have {{notifications.length }}  notifications</li>
               <li>
                 <ul class="menu">
@@ -59,7 +59,7 @@
             </ul>
           </li>          
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown-menu">
               <img src="../../../../assets/images/user.jpg" class="user-image" alt="Sohel Rana">
               <!-- <span class="hidden-xs"> {{ user?.firstName }} {{ user?.lastName }} </span> -->
               <span class="hidden-xs"> Sohel Rana </span>
@@ -68,23 +68,9 @@
               <li class="user-header">
                 <img src="../../../../assets/images/user.jpg" class="img-circle" alt="Sohel Rana">
                 <p>
-                   {{ user?.firstName }} {{ user?.lastName }} - Coder
-                  <small>Member since Nov. 2008</small>
-                  <small>Code never lies, comments sometimes do.</small>
+                  <!--{{ user?.firstName }} {{ user?.lastName }}-->
+                  Sohel Rana
                 </p>
-              </li>
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a [class.disabled]="true">Followers</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a [class.disabled]="true">Sales</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a [class.disabled]="true">Friends</a>
-                  </div>
-                </div>
               </li>
               <li class="user-footer">
                 <div class="pull-left">
