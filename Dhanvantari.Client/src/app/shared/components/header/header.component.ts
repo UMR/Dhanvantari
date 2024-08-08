@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
     private messageService: MessageService,
     private localStorage: LocalStorageService,
     private notificationService: NotificationService,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.bindUserDetails();
@@ -92,7 +92,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onSignOut() {
-   
+
     this.localStorage.removeItem('userSession');
     this.localStorage.removeItem('users');
     this.localStorage.removeItem('currentUser');
