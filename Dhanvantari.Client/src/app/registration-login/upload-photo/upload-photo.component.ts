@@ -25,4 +25,7 @@ export class UploadPhotoComponent {
   onNextClick() {
       this.router.navigateByUrl("/");
   }
+  skipButton() {
+    this.router.navigateByUrl("/");
+  }
 }
