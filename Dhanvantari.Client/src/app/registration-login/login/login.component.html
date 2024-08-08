@@ -1,0 +1,10 @@
+<h1>Login Component</h1>
+<input type="text" placeholder="Email/Mobile Number" [(ngModel)]="loginId" *ngIf="!showPasswordFiled" />
+<br />
+<input type="password" placeholder="Enter Password" [(ngModel)]="password" *ngIf="showPasswordFiled" />
+<br />
+<button (click)="onNextClick()" *ngIf="!showPasswordFiled">Next ></button>
+<br />
+<button (click)="onPrevClick()" *ngIf="showPasswordFiled">< Back</button>
+<button (click)="onLoginClick()" *ngIf="showPasswordFiled"> Login </button>
+<br />
