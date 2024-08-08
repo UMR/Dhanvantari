@@ -7,3 +7,4 @@ global using Patient.Persistence.Repositories;
 global using Patient.Application.Contracts.Persistence;
 global using Patient.Persistence.Data;
 global using Patient.Domain.Enums;
+global using Patient.Domain;

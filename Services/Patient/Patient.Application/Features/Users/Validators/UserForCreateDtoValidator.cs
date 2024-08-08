@@ -8,15 +8,11 @@ public class UserForCreateDtoValidator : AbstractValidator<UserForCreateDto>
     {
         _userRepository = serviceProvider.GetService<IUserRepository>();
 
-        RuleFor(a => a.FirstName)
-            .NotEmpty()
-            .WithMessage("{PropertyName} is required")
+        RuleFor(a => a.FirstName)            
             .MaximumLength(50)
             .WithMessage("{PropertyName} must not exceed 50 characters");
 
-        RuleFor(a => a.LastName)
-            .NotEmpty()
-            .WithMessage("{PropertyName} is required")
+        RuleFor(a => a.LastName)            
             .MaximumLength(50)
             .WithMessage("{PropertyName} must not exceed 50 characters");
 
@@ -31,7 +27,7 @@ public class UserForCreateDtoValidator : AbstractValidator<UserForCreateDto>
             .MaximumLength(100)
             .WithMessage("{PropertyName} must not exceed 100 characters");
 
-        RuleFor(a => a.Password)
+        RuleFor(a => a.Pin)
             .NotEmpty()
             .WithMessage("{PropertyName} is required")
             .MaximumLength(6)
@@ -41,12 +37,7 @@ public class UserForCreateDtoValidator : AbstractValidator<UserForCreateDto>
             .Must(BeAPastDate)
             .WithMessage("The date must be in the past.");
 
-    }
-
-    private bool BeEmptyEmail(string email)
-    {
-        return string.IsNullOrEmpty(email);
-    }
+    }    
 
     private bool BeAPastDate(DateTime? date)
     {

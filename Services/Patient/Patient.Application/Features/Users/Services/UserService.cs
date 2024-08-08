@@ -26,15 +26,18 @@ public class UserService : BaseService, IUserService
             return response;
         }        
 
+        Guid id = Guid.NewGuid();
+
         var entity = new User
-        {            
+        {    
+            Id = id,
             FirstName = request.FirstName,
             LastName = request.LastName,
             Mobile = request.Mobile,
             Email = request.Email,
-            Password = request.Password,           
-            CreatedDate = DateTime.Now,            
-            UpdatedDate = DateTime.Now            
+            Pin = request.Pin,  
+            Status = (byte)UserStatus.Pending,
+            CreatedBy = id
         };
 
         await _userRepository.CreateAsync(entity);
@@ -93,8 +96,13 @@ public class UserService : BaseService, IUserService
 
     public async Task<bool> IsActiveAsync(Guid id)
     {
-        UserStatus status = await _userRepository.IsActiveAsync(id);        
-        return status == UserStatus.Active ? true : false;
+        UserStatus status = await _userRepository.IsActiveAsync(id);
+        if (status == UserStatus.Active || status == UserStatus.Pending) 
+        {
+            return true;
+        }
+        
+        return false;
     }
 
     public async Task<UserForListDto> GetUserAsync(string loginId, string password)

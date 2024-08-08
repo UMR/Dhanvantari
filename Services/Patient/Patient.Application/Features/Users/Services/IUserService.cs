@@ -10,7 +10,7 @@ public interface IUserService
 
     Task<BaseCommandResponse> DeleteAsync(Guid guid);
 
-    Task<UserForListDto> GetUserAsync(string loginId, string password);
+    Task<UserForListDto> GetUserAsync(string loginId, string pin);
 
     Task<UserForListDto> GetByIdAsync(Guid id);
 

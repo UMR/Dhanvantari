@@ -18,7 +18,7 @@ global using System.ComponentModel.DataAnnotations;
 global using Patient.Application.Features;
 global using Patient.Application.Features.Users.Services;
 global using Patient.Application.Mappings;
-global using Patient.Persistence;
+global using Patient.Domain;
 global using Patient.Application.Wrapper;
 global using Patient.Application.Contracts.Persistence;
 global using Patient.Application.Contracts.Services;

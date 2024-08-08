@@ -40,11 +40,11 @@ public class UserRepository : IUserRepository
         return user;
     }    
 
-    public async Task<User> GetAsync(string loginId, string password)
+    public async Task<User> GetAsync(string loginId, string pin)
     {
         var user = await _context.Users.AsNoTracking()
             .FirstOrDefaultAsync(u => (u.Email.ToUpper() == loginId.Trim().ToUpper() || u.Mobile == loginId.Trim())
-            && u.Password == password.Trim());
+            && u.Pin == pin.Trim());
         return user;
     }
 

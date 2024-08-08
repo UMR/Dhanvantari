@@ -14,17 +14,21 @@
 
             if (!context.Users.Any())
             {
+                Guid id = Guid.NewGuid();
+
                 var users = new List<User>()
                 {
                     new User
                     {
+                        Id = id,
                         FirstName = "Captain",
                         LastName = "Black",
                         Email = "kaptan.cse@gmail.com",
                         Mobile ="01721525318",
-                        Password = "123456",
+                        Pin = "123456",
                         Status = (byte)UserStatus.Active,
-                        CreatedDate = DateTime.Now,
+                        CreatedBy = id,
+                        CreatedDate = DateTime.Now
                     }
                 };
 

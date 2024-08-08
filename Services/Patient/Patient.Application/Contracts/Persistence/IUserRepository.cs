@@ -1,6 +1,4 @@
-﻿using Patient.Domain.Enums;
-
-namespace Patient.Application.Contracts.Persistence;
+﻿namespace Patient.Application.Contracts.Persistence;
 
 public interface IUserRepository
 {
@@ -14,7 +12,7 @@ public interface IUserRepository
 
     Task<User> GetByIdAsync(Guid id);
 
-    Task<User> GetAsync(string loginId, string password);
+    Task<User> GetAsync(string loginId, string pin);
 
     Task<bool> IsExistAsync(string loginId);
 
