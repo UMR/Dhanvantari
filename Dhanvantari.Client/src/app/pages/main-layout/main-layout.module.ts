@@ -8,6 +8,7 @@ import { MainSidebarModule } from '../../shared/components/main-sidebar/main-sid
 import { ContentHeaderModule } from '../../shared/components/content-header/content-header.module';
 import { ControlSidebarModule } from '../../shared/components/control-sidebar/control-sidebar.module';
 import { ControlSidebarBackGroundModule } from '../../shared/components/control-sidebar-bg/control-sidebar-bg.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { ControlSidebarBackGroundModule } from '../../shared/components/control-
     ControlSidebarModule,
     ControlSidebarBackGroundModule,
     ContentHeaderModule,
+    FormsModule
   ],
   declarations: [MainLayoutComponent],
   exports: [MainLayoutComponent],
