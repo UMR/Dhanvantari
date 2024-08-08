@@ -12,12 +12,12 @@
       </a>
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <li class="dropdown messages-menu"  (click)="messageClick()">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success"> {{messages.length }} </span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" [ngClass]="showMessage ? 'displayShow' : 'displayNone'">
               <li class="header">You have  {{messages.length }} messages</li>
               <li>
                 <ul class="menu">
@@ -38,12 +38,12 @@
               <li class="footer"><a  [routerLink]="'/mail/inbox'">See All Messages</a></li>
             </ul>
           </li>
-          <li class="dropdown notifications-menu"  data-target="#notification" data-toggle="collapse">
-            <a href="javascript:void(0)" class="dropdown-toggle">
+          <li class="dropdown notifications-menu" (click)="noficationClick()">
+            <a href="javascript:void(0)">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning"> {{notifications.length }} </span>
             </a>
-            <ul class="dropdown-menu" id="notification">
+            <ul class="dropdown-menu" [ngClass]="showNotification ? 'displayShow' : 'displayNone'">
               <li class="header">You have {{notifications.length }}  notifications</li>
               <li>
                 <ul class="menu">
@@ -58,13 +58,13 @@
               <li class="footer"><a [class.disabled]="true">View all</a></li>
             </ul>
           </li>          
-          <li class="dropdown user user-menu">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown-menu">
+          <li class="dropdown user user-menu" (click)="profileClick()">
+            <a href="javascript:void(0)">
               <img src="../../../../assets/images/user.jpg" class="user-image" alt="Sohel Rana">
               <!-- <span class="hidden-xs"> {{ user?.firstName }} {{ user?.lastName }} </span> -->
               <span class="hidden-xs"> Sohel Rana </span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" [ngClass]="showProfile ? 'displayShow' : 'displayNone'">
               <li class="user-header">
                 <img src="../../../../assets/images/user.jpg" class="img-circle" alt="Sohel Rana">
                 <p>
