@@ -52,6 +52,6 @@ export class HeaderComponent implements OnInit {
     this.localStorage.removeItem('userSession');
     this.localStorage.removeItem('users');
     this.localStorage.removeItem('currentUser');
-    this.router.navigate(['/user/login']);
+    this.router.navigate(['/login']);
   }
 }
