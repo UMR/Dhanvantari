@@ -1,6 +1,6 @@
 ﻿namespace Patient.Application.Features;
 
-public class UserForListDto
+public class UserListDto
 {
     public Guid Id { get; set; }
 

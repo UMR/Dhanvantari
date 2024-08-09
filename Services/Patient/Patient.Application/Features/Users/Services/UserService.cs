@@ -12,10 +12,10 @@ public class UserService : BaseService, IUserService
         _userRepository = userRepository;
     }
 
-    public async Task<BaseCommandResponse> CreateAsync(UserForCreateDto request)
+    public async Task<BaseCommandResponse> CreateAsync(UserCreateDto request)
     {
         var response = new BaseCommandResponse();
-        var validator = new UserForCreateDtoValidator(_serviceProvider);
+        var validator = new UserCreateDtoValidator(_serviceProvider);
         var validationResult = await validator.ValidateAsync(request);
 
         if (validationResult.IsValid == false)
@@ -45,10 +45,10 @@ public class UserService : BaseService, IUserService
         return response;
     }
 
-    public async Task<BaseCommandResponse> UpdateAsync(Guid id, UserForUpdateDto request)
+    public async Task<BaseCommandResponse> UpdateAsync(Guid id, UserUpdateDto request)
     {
         var response = new BaseCommandResponse();
-        var validator = new UserForUpdateDtoValidator(_serviceProvider);
+        var validator = new UserUpdateDtoValidator(_serviceProvider);
         var validationResult = await validator.ValidateAsync(request);
 
         if (validationResult.IsValid == false)
@@ -114,17 +114,17 @@ public class UserService : BaseService, IUserService
         return response;
     }
 
-    public async Task<List<UserForListDto>> GetAllAsync()
+    public async Task<List<UserListDto>> GetAllAsync()
     {
         var usersFromRepo = await _userRepository.GetAllAsync();
-        var usersToReturn = _mapper.Map<List<UserForListDto>>(usersFromRepo);
+        var usersToReturn = _mapper.Map<List<UserListDto>>(usersFromRepo);
         return usersToReturn;
     }
 
-    public async Task<UserForListDto> GetByIdAsync(Guid id)
+    public async Task<UserListDto> GetByIdAsync(Guid id)
     {
         var userFromRepo = await _userRepository.GetByIdAsync(id);
-        var userToReturn = _mapper.Map<UserForListDto>(userFromRepo);
+        var userToReturn = _mapper.Map<UserListDto>(userFromRepo);
         return userToReturn;
     }
 
@@ -143,10 +143,10 @@ public class UserService : BaseService, IUserService
         return false;
     }
 
-    public async Task<UserForListDto> GetUserAsync(string loginId, string password)
+    public async Task<UserListDto> GetUserAsync(string loginId, string password)
     {
         var userFromRepo = await _userRepository.GetAsync(loginId, password);
-        var userToReturn = _mapper.Map<UserForListDto>(userFromRepo);
+        var userToReturn = _mapper.Map<UserListDto>(userFromRepo);
         return userToReturn;
     }
 }
