@@ -52,4 +52,7 @@ export class InputOtpComponent {
   onNextClick() {
     this.router.navigateByUrl("/set-password");
   }
+  onPrevClick() {
+    this.router.navigateByUrl("/login");
+  }
 }

@@ -1,12 +1,19 @@
-<h1>Basic Info</h1>
-<input type="text" placeholder="First Name" [(ngModel)]="firstName" />
-<br />
-<input type="text" placeholder="Last Name" [(ngModel)]="lastName" />
-<br />
-<input type="text" placeholder="Date of Birth" [(ngModel)]="dateOfBirth" />
-<br />
-<input type="text" placeholder="Mobile Number" [(ngModel)]="mobile" />
-<br />
-<input type="text" placeholder="Email" [(ngModel)]="email" />
-<br />
-<button (click)="onNextClick()">Next ></button>
+
+<div class="content">
+  <div class="o-c">
+    <div class="card">
+      <p class="a-o-i">Basic Info</p>
+      <input type="text" placeholder="First Name" [(ngModel)]="firstName"/>
+      <br />
+      <input type="text" placeholder="Last Name" [(ngModel)]="lastName"  style="margin:16px"/>
+      <br />
+      <input type="text" placeholder="Date of Birth" [(ngModel)]="dateOfBirth" />
+      <br />
+      <input type="text" placeholder="Mobile Number" [(ngModel)]="mobile" style="margin:16px"/>
+      <br />
+      <input type="text" placeholder="Email" [(ngModel)]="email" />
+      <br />
+      <button (click)="onNextClick()" style="margin-top:16px">Next ></button>
+    </div>
+  </div>
+</div>

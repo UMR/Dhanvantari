@@ -23,9 +23,39 @@ export class UploadPhotoComponent {
   }
 
   onNextClick() {
-      this.router.navigateByUrl("/");
+    this.authService.login(this.loginId, this.password)
+      .subscribe(res => {
+        /*localStorage.setItem(authCookieKey, JSON.stringify(res))*/
+        this.router.navigateByUrl("/");
+      },
+        err => {
+          console.log(err);
+          this.router.navigateByUrl("/");
+        },
+        () => {
+          //if (this.loginService.redirectUrl) {
+          //    this.router.navigateByUrl(this.loginService.redirectUrl);
+          //    this.loginService.redirectUrl = "";
+          //}
+          //else {
+          //    this.router.navigate(['/']);
+          //}
+        }
+      );
   }
   skipButton() {
-    this.router.navigateByUrl("/");
+    this.authService.login(this.loginId, this.password)
+      .subscribe(res => {
+       
+        this.router.navigateByUrl("/");
+      },
+        err => {
+          console.log(err);
+          this.router.navigateByUrl("/");
+        },
+        () => {
+         
+        }
+      );
   }
 }

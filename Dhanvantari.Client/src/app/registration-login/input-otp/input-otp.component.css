@@ -87,6 +87,7 @@
   display: inline-block;
   width: calc(100% - 250px);
   vertical-align: top;
+  padding:0px;
 }
 
 .sidebar {
