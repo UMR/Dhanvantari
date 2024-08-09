@@ -22,7 +22,7 @@ export class AuthService {
         "username": "intelchiprules@yahoo.co.in"
       }
     ]
-    
+    this.localStorage.setItem('userSession', JSON.stringify(jsonData));
     return this.http
       .post<any>(`/users/authenticate`, {
         username: username,
