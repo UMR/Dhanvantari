@@ -30,7 +30,7 @@ const routes: Routes = [
       {
         path: 'change-password',
         component: ChangePasswordComponent,
-        // canActivate: [AuthGuard],
+         canActivate: [AuthGuard],
         data: {
           breadcrumb: 'Change Password',
           breadcrumbs: 'Change Password',
@@ -44,7 +44,7 @@ const routes: Routes = [
       {
         path: 'demographics',
         component: DemographicsComponent,
-        // canActivate: [AuthGuard],
+         canActivate: [AuthGuard],
         data: {
           breadcrumb: 'Demographics',
           breadcrumbs: 'Demographics',
@@ -58,12 +58,12 @@ const routes: Routes = [
       {
         path: 'upload-document',
         component: UploadDocumentComponent,
-        // canActivate: [AuthGuard],
+         canActivate: [AuthGuard],
         data: {
-          breadcrumb: 'Change Password',
-          breadcrumbs: 'Change Password',
-          title: 'Change Password Title',
-          smallText: 'Change Password Small Text',
+          breadcrumb: 'Document Upload',
+          breadcrumbs: 'Document Upload',
+          title: 'Document Upload Title',
+          smallText: 'Document Upload Small Text',
           isHome: true,
           icon: 'fa fa-home',
           show: false,
@@ -72,7 +72,7 @@ const routes: Routes = [
       {
         path: 'pay-now',
         component: PayNowComponent,
-        // canActivate: [AuthGuard],
+         canActivate: [AuthGuard],
         data: {
           breadcrumb: 'Demographics',
           breadcrumbs: 'Demographics',
