@@ -1,3 +1,223 @@
-.w-100{
-    width:100%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --bg-color: #242d34;
+  --white-color: #e7e9ea;
+  --black-color: #0f1419;
+  --grey-color: #71767b;
+  --focus-color: #1d9bf0;
+  --grey-color-hover: #333639;
+  --white-color-hover: #e6e6e6;
+  --black-color-hover: #536471;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 24px 20px;
+  border-radius: 16px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: inherit;
+}
+
+.close_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+  .close_button:hover {
+    background-color: var(--grey-color-hover);
+  }
+
+.logo {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.content {
+  width: 300px;
+  color: inherit;
+  text-align: center;
+}
+
+  .content h1 {
+    margin-block: 28px;
+  }
+
+.action_buttons,
+.sign_up_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: inherit;
+  gap: 1.3rem;
+}
+
+.primary,
+.secondary {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 0;
+  border-radius: 16px;
+}
+
+.primary {
+  background-color: #fff;
+  color: var(--black-color);
+  transition: .2s ease;
+  font-weight: 600;
+}
+
+  .primary:hover {
+    background-color: var(--white-color-hover);
+  }
+
+.secondary {
+  background-color: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--grey-color);
+}
+
+  .secondary:hover {
+    background-color: var(--grey-color-hover);
+  }
+
+.sign_in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .sign_in object {
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+  }
+
+.divider {
+  margin-block: 28px;
+  position: relative;
+}
+
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 45%;
+    background-color: var(--grey-color);
+    top: 50%;
+  }
+
+  .divider::before {
+    left: 0;
+  }
+
+  .divider::after {
+    right: 0;
+  }
+
+.email_label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+  .email_label input {
+    width: 100%;
+    border: 1px solid var(--grey-color);
+    border-radius: 16px;
+    outline: none;
+    padding: 25px 10px 10px 10px;
+    color: var(--white-color);
+    font-size: 18px;
+  }
+
+  .email_label label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 18px;
+    color: var(--grey-color);
+    transition: .2s ease;
+  }
+
+  .email_label input::placeholder {
+    opacity: 0;
+  }
+
+  .email_label input:focus {
+    outline: 1px solid var(--focus-color);
+  }
+
+    .email_label input:focus + label,
+    .email_label input:not(:placeholder-shown) + label {
+      font-size: 10px;
+      top: 10px;
+      color: var(--focus-color);
+    }
+
+.footer {
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--grey-color);
+  font-weight: 300;
+}
+
+  .footer a {
+    color: var(--focus-color);
+  }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
