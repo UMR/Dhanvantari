@@ -37,8 +37,8 @@ public class UserRepository : IUserRepository
 
     public async Task<IEnumerable<User>> GetAllAsync()
     {
-        var user = await _context.Users.AsNoTracking().ToListAsync();
-        return user;
+        var users = await _context.Users.AsNoTracking().ToListAsync();
+        return users;
     }
 
     public async Task<User> GetByIdAsync(Guid id)

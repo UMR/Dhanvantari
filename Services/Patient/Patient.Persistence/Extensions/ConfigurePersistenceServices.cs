@@ -8,9 +8,9 @@ public static class ConfigurePersistenceServices
         {
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
         });
-
-        //builder.Services.AddDbContext<DhanvantariDbContext>();
+        
         builder.Services.AddScoped<IUserRepository, UserRepository>();
+        builder.Services.AddScoped<IUserPhotoRepository, UserPhotoRepository>();
 
         return builder;
     }
