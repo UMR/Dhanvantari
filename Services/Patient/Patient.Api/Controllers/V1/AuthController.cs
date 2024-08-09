@@ -15,7 +15,7 @@ public class AuthController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("Register")]
-    public async Task<IActionResult> RegisterAsync(UserForCreateDto request)
+    public async Task<IActionResult> RegisterAsync(UserCreateDto request)
     {
         return Ok(await _userService.CreateAsync(request));
     }

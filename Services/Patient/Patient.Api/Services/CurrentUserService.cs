@@ -13,12 +13,12 @@ public class CurrentUserService : ICurrentUserService
     {
         get
         {
-            UserForListDto currentUser = null;
+            UserListDto currentUser = null;
             var currentUserClaim = _httpContextAccessor.HttpContext?.User?.FindFirst("user");
 
             if (currentUserClaim != null && !string.IsNullOrEmpty(currentUserClaim.Value))
             {
-                currentUser = JsonConvert.DeserializeObject<UserForListDto>(currentUserClaim.Value);
+                currentUser = JsonConvert.DeserializeObject<UserListDto>(currentUserClaim.Value);
             }
 
             if (currentUser != null)

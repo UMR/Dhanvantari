@@ -12,8 +12,21 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
+    [HttpGet("GetAll")]
+    public async Task<IActionResult> GetAllAsync()
+    {
+        return Ok(await _userService.GetAllAsync());
+    }
+    
+    [HttpGet("GetById")]
+    public async Task<IActionResult> GetByIdAsync(Guid id)
+    {
+        return Ok(await _userService.GetByIdAsync(id));
+    }
+
+    [AllowAnonymous]
     [HttpPost("Update/{id}")]
-    public async Task<IActionResult> UpdateAsync(Guid id, UserForUpdateDto request)
+    public async Task<IActionResult> UpdateAsync(Guid id, UserUpdateDto request)
     {
         return Ok(await _userService.UpdateAsync(id, request));
     }
@@ -26,8 +39,8 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpGet("IsDuplicate/{loginId}")]
-    public async Task<IActionResult> IsDuplicateUserAsync(string loginId)
+    [HttpGet("IsExist/{loginId}")]
+    public async Task<IActionResult> IsExistUserAsync(string loginId)
     {
         return Ok(await _userService.IsExistAsync(loginId));
     }
