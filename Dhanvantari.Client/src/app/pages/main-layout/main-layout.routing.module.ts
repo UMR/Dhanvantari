@@ -41,31 +41,6 @@ const routes: Routes = [
       },
     ],
   },
-  {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
-    path: 'input-otp',
-    component: InputOtpComponent,
-  },
-  {
-    path: 'set-password',
-    component: SetPasswordComponent,
-  },
-  {
-    path: 'basic-info',
-    component: BasicInfoComponent,
-  },
-  {
-    path: 'upload-photo',
-    component: UploadPhotoComponent,
-  },
-  //{
-  //  path: 'page-not-found',
-  //  loadChildren: () =>
-  //    import('./page-not-found/page-not-found.module').then((m) => m.PageNotFoundModule)
-  //},
 ];
 
 @NgModule({
