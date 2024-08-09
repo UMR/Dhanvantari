@@ -22,6 +22,13 @@ public class UserRepository : IUserRepository
         return await _context.SaveChangesAsync() > 0 ? true : false;        
     }
 
+    public async Task<bool> UpdateStatusAsync(User user) 
+    {
+        user.Status = (byte)UserStatus.Active;
+        _context.Entry(user).Property(u=>u.Status).IsModified = true;
+        return await _context.SaveChangesAsync() > 0 ? true : false;
+    }
+
     public async Task<bool> DeleteAsync(User user)
     {
         _context.Users.Remove(user);

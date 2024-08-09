@@ -6,6 +6,8 @@ public interface IUserRepository
 
     Task<bool> UpdateAsync(User user);
 
+    Task<bool> UpdateStatusAsync(User user);
+
     Task<bool> DeleteAsync(User user);
 
     Task<IEnumerable<User>> GetAllAsync();

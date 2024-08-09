@@ -4,11 +4,11 @@ public interface IUserService
 {
     Task<BaseCommandResponse> CreateAsync(UserForCreateDto request);
 
-    Task<BaseCommandResponse> UpdateAsync(Guid guid, UserForUpdateDto request);
+    Task<BaseCommandResponse> UpdateAsync(Guid id, UserForUpdateDto request);
 
-    Task<BaseCommandResponse> UpdateStatusAsync(Guid guid);
+    Task<BaseCommandResponse> UpdateStatusAsync(Guid id);
 
-    Task<BaseCommandResponse> DeleteAsync(Guid guid);
+    Task<BaseCommandResponse> DeleteAsync(Guid id);
 
     Task<UserForListDto> GetUserAsync(string loginId, string pin);
 

@@ -12,10 +12,17 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpPost("UpdateBasic/{id}")]
-    public async Task<IActionResult> UpdateBasicAsync(Guid id, UserForUpdateDto request)
+    [HttpPost("Update/{id}")]
+    public async Task<IActionResult> UpdateAsync(Guid id, UserForUpdateDto request)
     {
         return Ok(await _userService.UpdateAsync(id, request));
+    }
+
+    [AllowAnonymous]
+    [HttpPatch("UpdateStatus/{id}")]
+    public async Task<IActionResult> UpdateStatusAsync(Guid id)
+    {
+        return Ok(await _userService.UpdateStatusAsync(id));
     }
 
     [AllowAnonymous]
