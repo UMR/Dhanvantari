@@ -1,6 +1,6 @@
 ﻿namespace Patient.Application.Features;
 
-public class UserPhotoForListDto
+public class UserPhotoListDto
 {
     public Guid Id { get; set; }
 
