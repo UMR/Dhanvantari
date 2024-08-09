@@ -61,5 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\2024-08-06\02_AZ_02_CREATE_TABLE_USER.sql" />
+    <None Include="Scripts\2024-08-06\03_AZ_03_CREATE_TABLE_USER_PHOTO.sql" />
   </ItemGroup>
 </Project>

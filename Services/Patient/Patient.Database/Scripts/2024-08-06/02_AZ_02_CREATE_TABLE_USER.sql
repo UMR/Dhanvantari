@@ -1,7 +1,7 @@
 ﻿USE [DhanvantariDB]
 GO
 
-/****** Object:  Table [dbo].[User]    Script Date: 8/6/2024 2:10:25 PM ******/
+/****** Object:  Table [dbo].[User]    Script Date: 8/9/2024 2:13:40 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,14 +10,14 @@ GO
 
 CREATE TABLE [dbo].[User](
 	[Id] [uniqueidentifier] NOT NULL,
-	[FirstName] [nvarchar](50) NOT NULL,
-	[LastName] [nvarchar](50) NOT NULL,
-	[Mobile] [nvarchar](15) NULL,
+	[FirstName] [nvarchar](50) NULL,
+	[LastName] [nvarchar](50) NULL,
+	[Mobile] [nvarchar](20) NULL,
 	[Email] [nvarchar](100) NULL,
-	[Password] [nvarchar](50) NOT NULL,
+	[Pin] [nvarchar](50) NOT NULL,
 	[DateOfBirth] [datetime] NULL,
 	[Status] [tinyint] NOT NULL,
-	[CreatedBy] [uniqueidentifier] NULL,
+	[CreatedBy] [uniqueidentifier] NOT NULL,
 	[CreatedDate] [datetime] NOT NULL,
 	[UpdatedBy] [uniqueidentifier] NULL,
 	[UpdatedDate] [datetime] NULL,
@@ -29,6 +29,9 @@ CREATE TABLE [dbo].[User](
 GO
 
 ALTER TABLE [dbo].[User] ADD  CONSTRAINT [DF_User_Id]  DEFAULT (newid()) FOR [Id]
+GO
+
+ALTER TABLE [dbo].[User] ADD  CONSTRAINT [DF_User_CreatedDate]  DEFAULT (getdate()) FOR [CreatedDate]
 GO
 
 
